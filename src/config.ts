@@ -22,6 +22,7 @@ class Config {
     get inference() {
         const config = this.#config;
 
+        
         // Load model
         let modelName: string | Model = config.get("model") || defaultConfig.model;
         if (modelName === "custom") {
