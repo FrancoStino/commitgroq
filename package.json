@@ -1,0 +1,148 @@
+{
+  "name": "commitgroq",
+  "displayName": "Commit Groq AI",
+  "description": "Generative Commit AI with Groq",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Programming Languages"
+  ],
+  "icon": "icon.jpg",
+  "license": "MIT",
+  "keywords": [
+    "code",
+    "assistant",
+    "ai",
+    "llm",
+    "commits",
+    "groq"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commitgroq.createCommit",
+        "title": "Run Commit Groq",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "when": "scmProvider == git",
+          "command": "commitgroq.createCommit",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "Commit Groq",
+        "properties": {
+          "commitgroq.model": {
+            "type": "string",
+            "enum": [
+              "llama-3.1-8b-instant",
+              "codegemma:latest",
+              "codellama:7b-instruct",
+              "mistral:latest",
+              "custom"
+            ],
+            "default": "llama-3.1-8b-instant",
+            "description": "Model to use for the commit creations.",
+            "order": 0
+          },
+          "commitgroq.custom.apiKeyGroq": {
+            "type": "string",
+            "default": "",
+            "description": "API key for authentication.",
+            "order": 1
+          },
+          "commitgroq.useEmojis": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable or disable the use of emojis in commit messages.",
+            "order": 2
+          },
+          "commitgroq.commitEmojis": {
+            "type": "object",
+            "default": {
+              "feat": "✨",
+              "fix": "🐛",
+              "docs": "📝",
+              "style": "💎",
+              "refactor": "♻️",
+              "test": "🧪",
+              "chore": "📦",
+              "revert": "⏪"
+            },
+            "description": "Map commit types to emojis. Only used if emojis are enabled.",
+            "order": 3
+          },
+          "commitgroq.custom.model": {
+            "type": "string",
+            "default": "",
+            "description": "You can use a non-listed model always that you have it pulled from groq. Note: It only will be selected when model is set to \"custom\".",
+            "order": 5
+          },
+          "commitgroq.custom.summaryPrompt": {
+            "type": "string",
+            "default": "",
+            "description": "Custom prompt for summarize the git diff.",
+            "order": 6
+          },
+          "commitgroq.custom.summaryTemperature": {
+            "type": "number",
+            "default": 0.8,
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Custom temperature for summarize the git diff. (greater = more creative)",
+            "order": 7
+          },
+          "commitgroq.custom.commitPrompt": {
+            "type": "string",
+            "default": "",
+            "description": "Custom prompt for commit message.",
+            "order": 8
+          },
+          "commitgroq.custom.commitTemperature": {
+            "type": "number",
+            "default": 0.2,
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Custom temperature for commit message. (greater = more creative)",
+            "order": 9
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "groq-sdk": "^0.5.0"
+  }
+}
