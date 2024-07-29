@@ -25,6 +25,7 @@ import Groq from 'groq-sdk';
 // Configurazione dell'API Key
 const groq = new Groq({ apiKey: config.inference.apiKeyGroq });
 
+cazzo
 // Funzione per ottenere i modelli
 export const getModels = async () => {
     try {
