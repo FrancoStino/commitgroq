@@ -2,7 +2,6 @@ import * as vscode from "vscode";
 import type { GitExtension, Repository } from "./types/git";
 import { getCommitMessage, getSummary } from "./generator";
 
-
 export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand(
 		"commitgroq.createCommit",
