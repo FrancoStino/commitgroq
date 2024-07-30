@@ -1,71 +1,51 @@
-# commitgroq README
+# Commit Groq
 
-This is the README for your extension "commitgroq". After writing up a brief description, we recommend including the following sections.
+Commit Groq è un'estensione per Visual Studio Code che utilizza l'API di Groq per migliorare il processo di commit del codice.
 
-## Features
+## Configurazione
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Per utilizzare Commit Groq, è necessario configurare la tua API key di Groq. Segui questi passaggi:
 
-For example if there is an image subfolder under your extension project workspace:
+1. Ottieni una API key da Groq (se non ne hai già una).
+2. Apri le impostazioni di VS Code (File > Preferences > Settings).
+3. Cerca "Commit Groq" nelle impostazioni.
+4. Inserisci la tua API key nel campo "Groq API Key".
 
-\!\[feature X\]\(images/feature-x.png\)
+## Funzionalità
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Generazione automatica di messaggi di commit basati sul codice modificato.
+- Analisi del codice per suggerimenti di miglioramento prima del commit.
+- Integrazione seamless con il flusso di lavoro di Git in VS Code.
 
-## Requirements
+## Utilizzo
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Fai le tue modifiche al codice come al solito.
+2. Quando sei pronto per fare un commit, usa il comando "Commit Groq: Generate Commit Message" dalla palette dei comandi (Ctrl+Shift+P).
+3. L'estensione genererà un messaggio di commit basato sulle tue modifiche.
+4. Rivedi e modifica il messaggio se necessario, quindi procedi con il commit.
 
-## Extension Settings
+## Impostazioni
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Questa estensione contribuisce le seguenti impostazioni:
 
-For example:
+* `commitGroq.apiKey`: La tua API key di Groq.
+* `commitGroq.language`: La lingua preferita per i messaggi di commit (default: inglese).
 
-This extension contributes the following settings:
+## Problemi noti
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Al momento non ci sono problemi noti. Se riscontri qualche problema, per favore apri un issue sul nostro repository GitHub.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
+## Note di rilascio
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Rilascio iniziale di Commit Groq.
 
 ---
 
-## Following extension guidelines
+## Per maggiori informazioni
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+* [Documentazione di Groq](https://www.groq.com/docs)
+* [Repository GitHub di Commit Groq](https://github.com/FrancoStino/commitgroq)
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Buon coding con Commit Groq!**
