@@ -31,7 +31,7 @@ Per utilizzare Commit Groq, è necessario configurare la tua API key di Groq. Se
 Questa estensione contribuisce le seguenti impostazioni:
 
 * `commitGroq.apiKey`: La tua API key di Groq.
-* `commitGroq.language`: La lingua preferita per i messaggi di commit (default: inglese).
+<!-- * `commitGroq.language`: La lingua preferita per i messaggi di commit (default: inglese). -->
 
 ## Problemi noti
 
