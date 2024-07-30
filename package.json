@@ -43,23 +43,25 @@
       {
         "title": "Commit Groq",
         "properties": {
-          "commitgroq.model": {
-            "type": "string",
-            "enum": [
-              "llama-3.1-8b-instant",
-              "codegemma:latest",
-              "codellama:7b-instruct",
-              "mistral:latest",
-              "custom"
-            ],
-            "default": "llama-3.1-8b-instant",
-            "description": "Model to use for the commit creations.",
-            "order": 0
-          },
-          "commitgroq.custom.apiKeyGroq": {
+          "commitgroq.apiKeyGroq": {
             "type": "string",
             "default": "",
             "description": "API key for authentication.",
+            "order": 0
+          },
+          "commitgroq.model": {
+            "type": "string",
+            "enum": [
+              "llama3-groq-8b-8192-tool-use-preview",
+              "llama3-groq-70b-8192-tool-use-preview",
+              "llama3-70b-8192",
+              "llama3-8b-8192",
+              "mixtral-8x7b-32768",
+              "gemma-7b-it",
+              "gemma2-9b-it"
+            ],
+            "default": "llama3-groq-8b-8192-tool-use-preview",
+            "description": "Model to use for the commit creations.",
             "order": 1
           },
           "commitgroq.useEmojis": {
@@ -83,31 +85,25 @@
             "description": "Map commit types to emojis. Only used if emojis are enabled.",
             "order": 3
           },
-          "commitgroq.custom.model": {
-            "type": "string",
-            "default": "",
-            "description": "You can use a non-listed model always that you have it pulled from groq. Note: It only will be selected when model is set to \"custom\".",
-            "order": 5
-          },
           "commitgroq.custom.summaryPrompt": {
             "type": "string",
             "default": "",
             "description": "Custom prompt for summarize the git diff.",
-            "order": 6
+            "order": 4
           },
           "commitgroq.custom.summaryTemperature": {
             "type": "number",
             "default": 0.8,
             "minimum": 0,
-            "maximum": 1,
-            "description": "Custom temperature for summarize the git diff. (greater = more creative)",
-            "order": 7
+            "maximum": 2,
+            "description": "Custom temperature for summarize the git diff. (between 0 and 2)",
+            "order": 5
           },
           "commitgroq.custom.commitPrompt": {
             "type": "string",
             "default": "",
             "description": "Custom prompt for commit message.",
-            "order": 8
+            "order": 6
           },
           "commitgroq.custom.commitTemperature": {
             "type": "number",
@@ -115,7 +111,7 @@
             "minimum": 0,
             "maximum": 1,
             "description": "Custom temperature for commit message. (greater = more creative)",
-            "order": 9
+            "order": 7
           }
         }
       }
@@ -142,7 +138,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "axios": "^1.7.2",
     "groq-sdk": "^0.5.0"
   }
 }

@@ -28,6 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
 	);
 
 	context.subscriptions.push(disposable);
+
 }
 
 async function getSummaryUriDiff(repo: Repository, uri: string) {
@@ -62,6 +63,8 @@ async function createCommitMessage(repo: Repository) {
 				const commitMessage = await getCommitMessage(summaries);
 				repo.inputBox.value = commitMessage;
 
+				// TODO: Update dinamically the models "properties" => "commitgroq.model"
+				
 				// biome-ignore lint/suspicious/noExplicitAny: no-explicit-any for error handling
 			} catch (error: any) {
 				if (error?.message) {
