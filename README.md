@@ -15,7 +15,6 @@ Per utilizzare Commit Groq, è necessario configurare la tua API key di Groq. Se
 
 ![Commit Groq Demo](https://raw.githubusercontent.com/FrancoStino/commitgroq/main/assets/commitgroq-demo.gif)
 
-
 - Generazione automatica di messaggi di commit basati sul codice modificato.
 - Analisi del codice per suggerimenti di miglioramento prima del commit.
 - Integrazione seamless con il flusso di lavoro di Git in VS Code.
