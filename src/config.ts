@@ -1,44 +1,45 @@
-import { workspace } from "vscode";
+import { workspace, ExtensionContext } from "vscode";
 import { type EmojisMap, Model } from "./types/llm";
+import { getApiKey } from "./types/apiKeyManager";
 
-export const defaultConfig = {
-    model: Model.Llama3,
-    useEmojis: false,
-    commitEmojis: {
-        feat: "✨",
-        fix: "🐛",
-        docs: "📝",
-        style: "💎",
-        refactor: "♻️",
-        test: "🧪",
-        chore: "📦",
-        revert: "⏪",
-    },
-    temperature: 0.8,
-    // num_predict: 100,
-};
+// export const defaultConfig = {
+//     model: Model.Llama3,
+//     useEmojis: false,
+//     commitEmojis: {
+//         feat: "✨",
+//         fix: "🐛",
+//         docs: "📝",
+//         style: "💎",
+//         refactor: "♻️",
+//         test: "🧪",
+//         chore: "📦",
+//         revert: "⏪",
+//     },
+//     temperature: 0.8,
+//     // num_predict: 100,
+// };
 
 class Config {
-    get inference() {
+    private context: ExtensionContext;
+
+    constructor(context: ExtensionContext) {
+        this.context = context;
+    }
+
+    async getInferenceConfig() {
         const config = this.#config;
 
-        // Load model
-        // let modelName: string | Model = config.get("model") || defaultConfig.model;
-        let modelName: string = config.get("model") as string;
-        // Load Emojis Config
-        const useEmojis: boolean =
-            config.get("useEmojis") || defaultConfig.useEmojis;
-        const commitEmojis: EmojisMap =
-            config.get("commitEmojis") || defaultConfig.commitEmojis;
+        // Load API Key
+        const apiKeyGroq = await getApiKey(this.context);
 
-        // Load endpoint
-        // let endpoint: string = "https://api.groq.com/openai/v1";
-        // if (endpoint.endsWith("/")) {
-        //     endpoint = endpoint.slice(0, -1).trim();
-        // }
+        // Load model
+        let modelName: string = config.get("model") as string;
+
+        // Load Emojis Config
+        const useEmojis: boolean = config.get("useEmojis") as boolean;
+        const commitEmojis: EmojisMap = config.get("commitEmojis") as EmojisMap;
 
         // Load custom prompt and temperatures
-        const apiKeyGroq = config.get('apiKeyGroq') as string;
         const summaryPrompt = config.get("custom.summaryPrompt") as string;
         const summaryTemperature = config.get("custom.summaryTemperature") as number;
         const commitPrompt = config.get("custom.commitPrompt") as string;
@@ -46,7 +47,6 @@ class Config {
 
         return {
             apiKeyGroq,
-            // endpoint,
             modelName,
             summaryPrompt,
             summaryTemperature,
@@ -62,4 +62,4 @@ class Config {
     }
 }
 
-export const config = new Config();
+export const createConfig = (context: ExtensionContext) => new Config(context);

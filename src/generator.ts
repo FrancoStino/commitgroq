@@ -1,13 +1,14 @@
-import { config } from "./config";
 import { Groq } from "groq-sdk";
-import * as vscode from "vscode";
+import { createConfig } from './config';
+import * as vscode from 'vscode';
 
+export async function getSummary(context: vscode.ExtensionContext, diff: string): Promise<string> {
+    const config = createConfig(context); // Passa il contesto corretto
+    const inferenceConfig = await config.getInferenceConfig();
 
-export async function getSummary(diff: string): Promise<string> {
-    const { apiKeyGroq, summaryPrompt, summaryTemperature, modelName } = config.inference;
+    const { apiKeyGroq, summaryPrompt, summaryTemperature, modelName } = inferenceConfig;
 
     const groq = new Groq({ apiKey: apiKeyGroq });
-
 
     const defaultSummaryPrompt = `You are an expert developer specialist in creating commits.
 	Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
@@ -64,7 +65,10 @@ export async function getSummary(diff: string): Promise<string> {
     }
 }
 
-export async function getCommitMessage(summaries: string[]) {
+export async function getCommitMessage(context: vscode.ExtensionContext, summaries: string[]) {
+    const config = createConfig(context); // Passa il contesto corretto
+    const inferenceConfig = await config.getInferenceConfig();
+
     const {
         apiKeyGroq,
         commitPrompt,
@@ -72,10 +76,9 @@ export async function getCommitMessage(summaries: string[]) {
         useEmojis,
         commitEmojis,
         modelName,
-    } = config.inference;
+    } = inferenceConfig;
 
     const groq = new Groq({ apiKey: apiKeyGroq });
-
 
     const defaultCommitPrompt = `You are an expert developer specialist in creating commits messages.
 	Your only goal is to retrieve a single commit message. 
