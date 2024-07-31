@@ -2,14 +2,15 @@
   "name": "commitgroq",
   "displayName": "Commit Groq AI",
   "description": "Generative Commit AI with Groq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "DavideLadisa",
   "engines": {
     "vscode": "^1.91.0"
   },
   "categories": [
     "Machine Learning",
-    "Programming Languages"
+    "Programming Languages",
+    "AI"
   ],
   "icon": "assets/icon.png",
   "license": "MIT",
@@ -25,6 +26,10 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "commitgroq.resetGroqApiKey",
+        "title": "Reset Groq API Key"
+      },
       {
         "command": "commitgroq.createCommit",
         "title": "Run Commit Groq",
@@ -44,12 +49,6 @@
       {
         "title": "Commit Groq",
         "properties": {
-          "commitgroq.apiKeyGroq": {
-            "type": "string",
-            "default": "",
-            "description": "API key for authentication.",
-            "order": 0
-          },
           "commitgroq.model": {
             "type": "string",
             "enum": [
