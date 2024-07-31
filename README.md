@@ -1,68 +1,70 @@
 # Commit Groq
 
-Commit Groq è un'estensione per Visual Studio Code che utilizza l'API di Groq per migliorare il processo di commit del codice.
+Commit Groq is a Visual Studio Code extension that uses the Groq API to enhance the code commit process.
 
-## Configurazione
+## Configuration
 
-Per utilizzare Commit Groq, è necessario configurare la tua API key di Groq. Segui questi passaggi:
+To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
-1. Ottieni una [API key da Groq](https://console.groq.com/keys) (se non ne hai già una).
-2. Apri le impostazioni di VS Code (File > Preferences > Settings).
-3. Cerca "Commit Groq" nelle impostazioni.
-4. Inserisci la tua API key nel campo "Groq API Key".
+1. Get an [API key from Groq](https://console.groq.com/keys) (if you don't have one already).
+2. Open VS Code settings (File > Preferences > Settings).
+3. Search for "Commit Groq" in the settings.
+4. Enter your API key in the "Groq API Key" field.
 
-## Funzionalità
+## Features
 
 ![Commit Groq Demo](https://raw.githubusercontent.com/FrancoStino/commitgroq/main/assets/commitgroq-demo.gif)
 
-- Generazione automatica di messaggi di commit basati sul codice modificato.
-- Analisi del codice per suggerimenti di miglioramento prima del commit.
-- Integrazione seamless con il flusso di lavoro di Git in VS Code.
+- Automatic generation of commit messages based on modified code.
+- Code analysis for improvement suggestions before committing.
+- Seamless integration with Git workflow in VS Code.
 
-## Utilizzo
+## Usage
 
-1. Fai le tue modifiche al codice come al solito.
-2. Quando sei pronto per fare un commit, usa il comando "Commit Groq: Generate Commit Message" dalla palette dei comandi (Ctrl+Shift+P).
-3. L'estensione genererà un messaggio di commit basato sulle tue modifiche.
-4. Rivedi e modifica il messaggio se necessario, quindi procedi con il commit.
+1. Make your code changes as usual.
+2. When you're ready to commit, use the "Commit Groq: Generate Commit Message" command from the command palette (Ctrl+Shift+P).
+3. The extension will generate a commit message based on your changes.
+4. Review and modify the message if necessary, then proceed with the commit.
 
-## Impostazioni
+## Settings
 
-Questa estensione contribuisce le seguenti impostazioni:
+This extension contributes the following settings:
 
-- "Run Commit Groq": genera automaticamente un messaggio di commit per il tuo commit.
-- "Reset API Commit Groq": ripristina la tua API key.
+- "Run Commit Groq": automatically generates a commit message for your commit.
+- "Reset API Commit Groq": resets your API key.
 
 - Model: You can select the model from the plugin configuration.
 
-`llama3` - default
+`llama3-groq-8b-8192-tool-use-preview` - default
 
-  `codegemma`
+`llama3-groq-70b-8192-tool-use-preview`
 
-  `codellama`
+`llama3-70b-8192`
 
-  `mistral`
+`llama3-8b-8192`
 
-  `custom` - It allow you to write down the model name that you have set on ollama.
+`mixtral-8x7b-32768`
 
+`gemma-7b-it`
 
-Use Emojis: It allow you to enable or disable the use of emojis in commit messages.
+`gemma2-9b-it`
 
-Custom Emojis: It allow you to write down the emojis you want to use in the next template object in the VSCode config.json.
+Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
+Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
-  ```json
-   "commitollama.commitEmojis": {
-    "feat": "✨",
-    "fix": "🐛",
-    "docs": "📝",
-    "style": "💎",
-    "refactor": "♻️",
-    "test": "🧪",
-    "chore": "📦",
-    "revert": "⏪"
-  }
-  ```
+```json
+ "commitollama.commitEmojis": {
+  "feat": "✨",
+  "fix": "🐛",
+  "docs": "📝",
+  "style": "💎",
+  "refactor": "♻️",
+  "test": "🧪",
+  "chore": "📦",
+  "revert": "⏪"
+}
+```
 
 - Custom Endpoint: Ollama usually uses port 11434. It is the value that will be used if empty.
 
@@ -74,16 +76,15 @@ Custom Emojis: It allow you to write down the emojis you want to use in the next
 
 - Custom Commit Temperature: The temperature that will be used to generate the commit message.
 
+## Known Issues
 
-## Problemi noti
-
-Al momento non ci sono problemi noti. Se riscontri qualche problema, per favore apri un issue sul nostro repository GitHub.
+There are currently no known issues. If you encounter any problems, please open an issue on our GitHub repository.
 
 ---
 
-## Per maggiori informazioni
+## For more information
 
-- [Documentazione di Groq](https://www.groq.com/docs)
-- [Repository GitHub di Commit Groq](https://github.com/FrancoStino/commitgroq)
+- [Groq Documentation](https://www.groq.com/docs)
+- [Commit Groq GitHub Repository](https://github.com/FrancoStino/commitgroq)
 
-**Buon coding con Commit Groq!**
+**Happy coding with Commit Groq!**

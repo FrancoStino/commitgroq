@@ -2,7 +2,7 @@
   "name": "commitgroq",
   "displayName": "Commit Groq AI",
   "description": "Generative Commit AI with Groq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "DavideLadisa",
   "engines": {
     "vscode": "^1.91.0"
