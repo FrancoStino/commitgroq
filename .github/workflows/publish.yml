@@ -1,9 +1,10 @@
 name: Deploy Extension
 
 on:
-  push:
-    branches:
-      - 'main'
+  workflow_run:
+    workflows: ["Tag"]
+    types:
+      - completed
 
 jobs:
   deploy:
