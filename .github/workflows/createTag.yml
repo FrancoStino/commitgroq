@@ -4,16 +4,13 @@ on:
   push:
     branches:
       - "main"
-    paths-ignore:
-    - '.github/**/*.yml'
-    - '.gitignore'
 
 jobs:
   create_tag:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Create Tag
         uses: jaywcjlove/create-tag-action@v2.2.0
