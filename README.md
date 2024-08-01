@@ -7,9 +7,17 @@ Commit Groq is a Visual Studio Code extension that uses the Groq API to enhance 
 To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
 1. Get an [API key from Groq](https://console.groq.com/keys) (if you don't have one already).
-2. Open VS Code settings (File > Preferences > Settings).
-3. Search for "Commit Groq" in the settings.
-4. Enter your API key in the "Groq API Key" field.
+2. Click on Sparkle icon on Source Control Bar.
+3. Insert your API key.
+4. Open VS Code settings (File > Preferences > Settings).
+5. Search for "Commit Groq" in the settings in you want customize it.
+6. Enjoy.
+
+
+## Reset API Key
+
+1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
+2. Type "Reset Groq API Key"
 
 ## Features
 
