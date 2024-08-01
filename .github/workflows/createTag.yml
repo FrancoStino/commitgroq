@@ -22,7 +22,7 @@ jobs:
       - name: install
         run: yarn
       - name: test
-        run: yarn test
+        run: yarn pretest
       # Publish to npm if this version is not published
       - name: publish
         run: |
