@@ -20,9 +20,9 @@ jobs:
           node-version: 20.x
           registry-url: 'https://npm.pkg.github.com'
       - name: install
-        run: npm install
+        run: yarn
       - name: test
-        run: npm test
+        run: yarn test
       # Publish to npm if this version is not published
       - name: publish
         run: |
