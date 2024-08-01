@@ -12,10 +12,9 @@ jobs:
   create_tag:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Create Tag
         uses: jaywcjlove/create-tag-action@v2.2.0
         with:
