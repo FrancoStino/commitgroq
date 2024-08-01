@@ -1,39 +1,25 @@
 name: Create Changelog
 
 on:
-  workflow_run:
-    workflows: ['Create Tag']
-    types:
-      - completed
+  push:
+    tags:
+      - 'v*'
 
 jobs:
-  deploy:
+  create_tag:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      # Passaggi per creare il tag
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1
+  generate_changelog:
+    needs: create_tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate changelog
+        uses: jaywcjlove/changelog-generator@v2.1.0
         with:
-          token: ${{ github.token }}
-          tag: ${{ github.ref_name }}
-
-      - name: Create Release
-        uses: ncipollo/release-action@v1.12.0
-        with:
-          allowUpdates: true
-          draft: false
-          makeLatest: true
-          name: ${{ github.ref_name }}
-          body: ${{ steps.changelog.outputs.changes }}
-          token: ${{ github.token }}
-
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          branch: main
-          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
-          file_pattern: CHANGELOG.md
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filter-author: '(jaywcjlove|dependabot)'
+          filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
