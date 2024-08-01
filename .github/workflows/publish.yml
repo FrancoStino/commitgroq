@@ -1,12 +1,14 @@
-on:
-  push:
-    branches:
-      - "main"
-
 name: Deploy Extension
+
+on:
+  workflow_run:
+    workflows: ['Create Changelog']
+    types:
+      - completed
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latests
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
