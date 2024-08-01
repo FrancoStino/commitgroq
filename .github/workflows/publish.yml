@@ -2,7 +2,7 @@ name: Deploy Extension
 
 on:
   workflow_run:
-    workflows: ['Tag']
+    workflows: ['Changelog']
     types:
       - completed
 
