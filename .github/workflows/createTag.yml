@@ -1,10 +1,10 @@
-name: publish
+name: Create Tag
 env:
   CI: true
 on:
   push:
     branches:
-      - master
+      - main
     tags:
       - "!*"
 jobs:
