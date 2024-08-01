@@ -1,9 +1,10 @@
 name: Deploy Extension
 
 on:
-  release:
+  workflow_run:
+    workflows: ['Changelog']
     types:
-      - created
+      - completed
 
 jobs:
   deploy:
