@@ -1,4 +1,6 @@
-name: Create Tag
+# .github/workflows/tag.yml
+
+name: Tag
 
 on:
   push:
