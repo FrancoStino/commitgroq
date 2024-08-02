@@ -1,3 +1,14 @@
+## [v1.0.9] - 2024-08-02
+### :flying_saucer: Other Changes
+- [`c7241bb`](https://github.com/FrancoStino/commitgroq/commit/c7241bb626df179c26ed5d56b746900b91975957) - yes *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`c761e55`](https://github.com/FrancoStino/commitgroq/commit/c761e55a028e3e34f459d749010c7b8bda2ad982) - feat ✨: Update GitHub Actions workflow to generate CHANGELOG from previous tags. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`aa456f2`](https://github.com/FrancoStino/commitgroq/commit/aa456f2ec22d0dc3291102e005b24fb11f56e570) - feat ✨: Update changelog workflow with write permission and new step *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`748639e`](https://github.com/FrancoStino/commitgroq/commit/748639e1c2c4b28d93e12c210ce67ac8f7d0009c) - feat ✨: Update CHANGELOG generation with latest tag *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`9167bbd`](https://github.com/FrancoStino/commitgroq/commit/9167bbd3b3dc4f5b69991480285903eb6ec65d04) - fix 🐛: Swapped to/from tags in changelog workflow YAML file. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`d6e3c0b`](https://github.com/FrancoStino/commitgroq/commit/d6e3c0bb256ef58f16d21e15e184c200a7caddda) - fix 🐛: Update changelog workflow permissions and steps *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`86ecd09`](https://github.com/FrancoStino/commitgroq/commit/86ecd09b1ca1b143c50ace26b9a3acedaeab36d6) - feat ✨: Update YAML workflow file for permissions and settings. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [main] - 2024-08-02
 ### :flying_saucer: Other Changes
 - [`47fb8d9`](https://github.com/FrancoStino/commitgroq/commit/47fb8d96ecb6820eb131ff0432bce263ccf8bd9b) - lock *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -35,3 +46,4 @@
 - [`2c5ec37`](https://github.com/FrancoStino/commitgroq/commit/2c5ec37320bf660051f01e86b3e72292631c4d27) - feat ✨: Update permissions and improve workflow efficiency. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
 
 [main]: https://github.com/FrancoStino/commitgroq/compare/v1.0.7...main
+[v1.0.9]: https://github.com/FrancoStino/commitgroq/compare/v1.0.8...v1.0.9
