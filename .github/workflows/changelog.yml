@@ -5,7 +5,7 @@ on:
     workflows: ['Tag']
     types:
       - completed
-      
+
 jobs:
   create-release:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
@@ -20,13 +20,17 @@ jobs:
         uses: loopwerk/tag-changelog@v1.3.0
         with:
           token: ${{ secrets.TOKEN_GITHUB }}
-          exclude_types: other,doc,chore
+          # exclude_types: other,doc,chore
+
+      - name: Extract tag name
+        id: extract_tag
+        run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Create release
         uses: actions/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: Release ${{ env.TAG_NAME }}
           body: ${{ steps.changelog.outputs.changes }}
