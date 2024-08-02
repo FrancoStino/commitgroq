@@ -50,7 +50,7 @@ jobs:
           toTag: ${{ env.previousTag }}
           # useGitmojis: true
           includeInvalidCommits: true
-          excludeTypes: docsChangelog
+          excludeTypes: docs
 
           
       # - name: Create Release
@@ -67,5 +67,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5.0.1
         with:
           branch: main
-          commit_message: 'docsChangelog: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
           file_pattern: CHANGELOG.md
