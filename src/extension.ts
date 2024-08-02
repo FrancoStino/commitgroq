@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
 		if (apiKey) {
 			// Salva la API key nel secret storage
 			await saveApiKey(context, apiKey);
-			vscode.window.showInformationMessage('API Key salvata con successo!');
+			vscode.window.showInformationMessage('API Key successfully saved!');
 		}
 	});
 
