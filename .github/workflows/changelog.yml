@@ -25,10 +25,16 @@ jobs:
       - name: Extract tag name
         id: extract_tag
         run: |
-          TAG_NAME=${GITHUB_REF#refs/tags/}
-          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            TAG_NAME=${GITHUB_REF#refs/tags/}
+            echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+          else
+            echo "This is not a tag ref: ${GITHUB_REF}"
+            exit 1
+          fi
 
       - name: Create release
+        if: env.TAG_NAME
         uses: actions/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
