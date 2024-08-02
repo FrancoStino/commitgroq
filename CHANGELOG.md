@@ -1,3 +1,12 @@
+## [v1.1.1] - 2024-08-02
+### :memo: Documentation Changes
+- [`a73c510`](https://github.com/FrancoStino/commitgroq/commit/a73c510189f14a6c93fd9b50558b2ac2b9393f0b) - update CHANGELOG.md for main [skip ci] *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :flying_saucer: Other Changes
+- [`e6f4a05`](https://github.com/FrancoStino/commitgroq/commit/e6f4a053754edc1587decc7f3820450504349d37) - feat ✨: Updated navigation menu and removed enabled API proposals. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`b6e1a6f`](https://github.com/FrancoStino/commitgroq/commit/b6e1a6f0d1ac7e8060af00308bd2f2bc1882463f) - chore 📦: Bumped package version from 1.1.0 to 1.1.1. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.0] - 2024-08-02
 ### :flying_saucer: Other Changes
 - [`68c132b`](https://github.com/FrancoStino/commitgroq/commit/68c132bbbebbbacc0503a5cc9b477958903fa333) - feat ✨: Update package version to 1.1.0. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -53,3 +62,4 @@
 [main]: https://github.com/FrancoStino/commitgroq/compare/v1.0.7...main
 [v1.0.9]: https://github.com/FrancoStino/commitgroq/compare/v1.0.8...v1.0.9
 [v1.1.0]: https://github.com/FrancoStino/commitgroq/compare/v1.0.9...v1.1.0
+[v1.1.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.0...v1.1.1
