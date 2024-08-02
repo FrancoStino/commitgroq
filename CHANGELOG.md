@@ -1,3 +1,8 @@
+## [v1.1.0] - 2024-08-02
+### :flying_saucer: Other Changes
+- [`68c132b`](https://github.com/FrancoStino/commitgroq/commit/68c132bbbebbbacc0503a5cc9b477958903fa333) - feat ✨: Update package version to 1.1.0. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.0.9] - 2024-08-02
 ### :flying_saucer: Other Changes
 - [`c7241bb`](https://github.com/FrancoStino/commitgroq/commit/c7241bb626df179c26ed5d56b746900b91975957) - yes *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -47,3 +52,4 @@
 
 [main]: https://github.com/FrancoStino/commitgroq/compare/v1.0.7...main
 [v1.0.9]: https://github.com/FrancoStino/commitgroq/compare/v1.0.8...v1.0.9
+[v1.1.0]: https://github.com/FrancoStino/commitgroq/compare/v1.0.9...v1.1.0
