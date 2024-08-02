@@ -38,8 +38,9 @@ jobs:
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
-          writeToFile: CHANGELOG.md
+          writeToFile: true
 
+          
       # - name: Create Release
       #   uses: ncipollo/release-action@v1.14.0
       #   with:
