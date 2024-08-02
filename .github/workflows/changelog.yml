@@ -7,32 +7,34 @@ on:
       - completed
 
 jobs:
-  create-release:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && startsWith(github.event.workflow_run.head_branch, 'refs/tags/') }}
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Create changelog text
+      - name: Update CHANGELOG
         id: changelog
-        uses: loopwerk/tag-changelog@v1.3.0
+        uses: requarks/changelog-action@v1.10.2
         with:
           token: ${{ secrets.TOKEN_GITHUB }}
-          # exclude_types: other,doc,chore
+          tag: ${{ github.ref_name }}
 
-      - name: Extract tag name
-        id: extract_tag
-        run: |
-          TAG_NAME=${GITHUB_REF#refs/tags/}
-          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
-
-      - name: Create release
-        uses: actions/create-release@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
         with:
-          tag_name: ${{ env.TAG_NAME }}
-          release_name: Release ${{ env.TAG_NAME }}
+          allowUpdates: true
+          draft: false
+          makeLatest: true
+          name: ${{ github.ref_name }}
           body: ${{ steps.changelog.outputs.changes }}
+          token: ${{ secrets.TOKEN_GITHUB }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          file_pattern: CHANGELOG.md
