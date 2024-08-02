@@ -19,7 +19,7 @@ jobs:
         id: changelog
         uses: loopwerk/tag-changelog@v1.3.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN_GITHUB }}
           exclude_types: other,doc,chore
 
       - name: Create release
