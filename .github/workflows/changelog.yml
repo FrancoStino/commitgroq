@@ -20,11 +20,26 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get latest tag
+        id: latestTag
+        run: |
+          # Ottieni il tag più recente
+          latest_tag=$(git describe --tags --abbrev=0)
+          echo "latestTag=$latest_tag" >> $GITHUB_ENV
+
       - name: Get previous tag
         id: previousTag
         run: |
-          name=$(git --no-pager tag --sort=creatordate --merged ${{ github.ref_name }} | tail -2 | head -1)
-          echo "previousTag=$name" >> $GITHUB_ENV
+          # Ottieni il tag precedente al tag più recente
+          previous_tag=$(git tag --sort=creatordate | grep -B1 "${{ env.latestTag }}" | head -1)
+          echo "previousTag=$previous_tag" >> $GITHUB_ENV
+
+      - name: Debug Tag Information
+        run: |
+          echo "Latest Tag: ${{ env.latestTag }}"
+          echo "Previous Tag: ${{ env.previousTag }}"
+          echo "Commits between ${{ env.previousTag }} and ${{ env.latestTag }}:"
+          git log ${{ env.previousTag }}..${{ env.latestTag }} --oneline
 
       - name: Update CHANGELOG
         id: changelog
@@ -32,7 +47,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fromTag: ${{ env.previousTag }}
-          toTag: ${{ github.ref_name }}
+          toTag: ${{ env.latestTag }}
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
