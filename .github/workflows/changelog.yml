@@ -34,6 +34,7 @@ jobs:
           toTag: ${{ env.previousTag }}
           # useGitmojis: true
           includeInvalidCommits: true
+          excludeTypes: null
 
 
       # - name: Create Release
