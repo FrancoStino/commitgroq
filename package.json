@@ -37,44 +37,14 @@
       }
     ],
     "menus": {
-      "scm/inputBox": [
+      "scm/title": [
         {
           "when": "scmProvider == git",
-          "command": "commitgroq.createCommit"
+          "command": "commitgroq.createCommit",
+          "group": "navigation"
         }
       ]
     },
-    "enabledApiProposals": [
-      "contribSourceControlInputBoxMenu",
-      "extensionsAny",
-      "newSymbolNamesProvider",
-      "interactive",
-      "codeActionAI",
-      "commentReveal",
-      "contribCommentThreadAdditionalMenu",
-      "contribCommentsViewThreadMenus",
-      "documentFiltersExclusive",
-      "embeddings",
-      "findTextInFiles",
-      "findFiles2",
-      "textSearchProvider",
-      "terminalDataWriteEvent",
-      "terminalExecuteCommandEvent",
-      "terminalSelection",
-      "terminalQuickFixProvider",
-      "mappedEditsProvider",
-      "aiRelatedInformation",
-      "chatParticipantAdditions",
-      "defaultChatParticipant",
-      "chatVariableResolver",
-      "contribSourceControlInputBoxMenu",
-      "authLearnMore",
-      "testObserver",
-      "aiTextSearchProvider",
-      "chatParticipantPrivate",
-      "chatProvider",
-      "lmTools@2"
-    ],
     "configuration": [
       {
         "title": "Commit Groq",
