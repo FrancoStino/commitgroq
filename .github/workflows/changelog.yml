@@ -46,8 +46,8 @@ jobs:
         uses: requarks/changelog-action@v1.10.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fromTag: ${{ env.previousTag }}
-          toTag: ${{ env.latestTag }}
+          fromTag: ${{ env.latestTag }}
+          toTag: ${{ env.previousTag }}
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
