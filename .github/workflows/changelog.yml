@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -35,14 +35,22 @@ jobs:
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
+          
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          allowUpdates: true
+          draft: true
+          makeLatest: true
+          name: ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.changes }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
-      # - name: Create Release
-      #   uses: ncipollo/release-action@v1.14.0
-      #   with:
-      #     allowUpdates: true
-      #     draft: true
-      #     makeLatest: true
-      #     name: ${{ github.ref_name }}
-      #     body: ${{ steps.changelog.outputs.changes }}
-      #     token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          file_pattern: CHANGELOG.md
