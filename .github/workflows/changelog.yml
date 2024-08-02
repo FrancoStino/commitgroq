@@ -11,8 +11,6 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
       contents: write
     steps:
       - name: Checkout Code
@@ -23,19 +21,17 @@ jobs:
       - name: Get previous tag
         id: previousTag
         run: |
-          name=$(git --no-pager tag --sort=creatordate --merged ${{ github.ref_name }} | tail -2 | head -1)
-          echo "previousTag: $name"
-          echo "previousTag=$name" >> $GITHUB_ENV
+          # Ottieni l'ultimo tag ordinato per data di creazione
+          previous_tag=$(git describe --tags --abbrev=0 HEAD^)
+          echo "previousTag=$previous_tag" >> $GITHUB_ENV
 
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1.10.2
-
         with:
-          token: ${{ github.token }}
-          fromTag: ${{ github.ref_name }}
-          toTag: ${{ env.previousTag }}
-          # useGitmojis: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fromTag: ${{ env.previousTag }}
+          toTag: ${{ github.ref_name }}
           includeInvalidCommits: true
           excludeTypes: null
           writeToFile: true
