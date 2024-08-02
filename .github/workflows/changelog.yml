@@ -10,7 +10,10 @@ jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -35,7 +38,6 @@ jobs:
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
-          
 
       # - name: Create Release
       #   uses: ncipollo/release-action@v1.14.0
@@ -46,7 +48,6 @@ jobs:
       #     name: ${{ github.ref_name }}
       #     body: ${{ steps.changelog.outputs.changes }}
       #     token: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Commit CHANGELOG.md
         uses: stefanzweifel/git-auto-commit-action@v5.0.1
