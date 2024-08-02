@@ -36,12 +36,12 @@ jobs:
           includeInvalidCommits: true
 
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1.14.0
-        with:
-          allowUpdates: true
-          draft: true
-          makeLatest: true
-          name: ${{ github.ref_name }}
-          body: ${{ steps.changelog.outputs.changes }}
-          token: ${{ secrets.TOKEN_GITHUB }}
+      # - name: Create Release
+      #   uses: ncipollo/release-action@v1.14.0
+      #   with:
+      #     allowUpdates: true
+      #     draft: true
+      #     makeLatest: true
+      #     name: ${{ github.ref_name }}
+      #     body: ${{ steps.changelog.outputs.changes }}
+      #     token: ${{ secrets.GITHUB_TOKEN }}
