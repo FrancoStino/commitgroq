@@ -1,3 +1,11 @@
+## [v1.1.2] - 2024-08-02
+### :memo: Documentation Changes
+- [`57538c8`](https://github.com/FrancoStino/commitgroq/commit/57538c8908396c89cc7ec814ab70d0dfa33cde50) - update CHANGELOG.md for main [skip ci] *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :flying_saucer: Other Changes
+- [`75e0781`](https://github.com/FrancoStino/commitgroq/commit/75e0781b38136e24e202e10cc8ea420f7fc240e9) - feat ✨: Update package version to 1.1.2 and exclude certain changelog types from CHANGELOG.md. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.1] - 2024-08-02
 ### :memo: Documentation Changes
 - [`a73c510`](https://github.com/FrancoStino/commitgroq/commit/a73c510189f14a6c93fd9b50558b2ac2b9393f0b) - update CHANGELOG.md for main [skip ci] *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -63,3 +71,4 @@
 [v1.0.9]: https://github.com/FrancoStino/commitgroq/compare/v1.0.8...v1.0.9
 [v1.1.0]: https://github.com/FrancoStino/commitgroq/compare/v1.0.9...v1.1.0
 [v1.1.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.0...v1.1.1
+[v1.1.2]: https://github.com/FrancoStino/commitgroq/compare/v1.1.1...v1.1.2
