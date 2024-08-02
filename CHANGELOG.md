@@ -1,3 +1,9 @@
+## [v1.1.2.1] - 2024-08-02
+### :flying_saucer: Other Changes
+- [`5319625`](https://github.com/FrancoStino/commitgroq/commit/531962542c8114355f63595856853e12678f56c1) - chore 📦: exclude 'docs 📝' changes from changelog in GH Actions *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`c09727b`](https://github.com/FrancoStino/commitgroq/commit/c09727b0b4285ea54cbc68ceca95aeb49d4b48e6) - chore 📦: update version number to 1.1.2.1 in package.json *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.2] - 2024-08-02
 ### :memo: Documentation Changes
 - [`57538c8`](https://github.com/FrancoStino/commitgroq/commit/57538c8908396c89cc7ec814ab70d0dfa33cde50) - update CHANGELOG.md for main [skip ci] *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -72,3 +78,4 @@
 [v1.1.0]: https://github.com/FrancoStino/commitgroq/compare/v1.0.9...v1.1.0
 [v1.1.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.0...v1.1.1
 [v1.1.2]: https://github.com/FrancoStino/commitgroq/compare/v1.1.1...v1.1.2
+[v1.1.2.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.2...v1.1.2.1
