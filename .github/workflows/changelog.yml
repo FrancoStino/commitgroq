@@ -38,6 +38,7 @@ jobs:
           # useGitmojis: true
           includeInvalidCommits: true
           excludeTypes: null
+          writeToFile: CHANGELOG.md
 
       # - name: Create Release
       #   uses: ncipollo/release-action@v1.14.0
@@ -49,9 +50,9 @@ jobs:
       #     body: ${{ steps.changelog.outputs.changes }}
       #     token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v5.0.1
-        with:
-          branch: main
-          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
-          file_pattern: CHANGELOG.md
+      # - name: Commit CHANGELOG.md
+      #   uses: stefanzweifel/git-auto-commit-action@v5.0.1
+      #   with:
+      #     branch: main
+      #     commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+      #     file_pattern: CHANGELOG.md
