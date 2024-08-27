@@ -96,5 +96,4 @@ There are currently no known issues. If you encounter any problems, please open 
 -   [Groq Documentation](https://www.groq.com/docs)
 -   [Commit Groq GitHub Repository](https://github.com/FrancoStino/commitgroq)
 
-> [!NOTE]  
 > **Happy coding with Commit Groq!**
