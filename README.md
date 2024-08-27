@@ -13,7 +13,6 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 5. Search for "Commit Groq" in the settings in you want customize it.
 6. Enjoy.
 
-
 ## Reset API Key
 
 1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
@@ -23,9 +22,9 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
 ![Commit Groq Demo](https://raw.githubusercontent.com/FrancoStino/commitgroq/main/assets/commitgroq-demo.gif)
 
-- Automatic generation of commit messages based on modified code.
-- Code analysis for improvement suggestions before committing.
-- Seamless integration with Git workflow in VS Code.
+-   Automatic generation of commit messages based on modified code.
+-   Code analysis for improvement suggestions before committing.
+-   Seamless integration with Git workflow in VS Code.
 
 ## Usage
 
@@ -38,10 +37,10 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
 This extension contributes the following settings:
 
-- "Run Commit Groq": automatically generates a commit message for your commit.
-- "Reset API Commit Groq": resets your API key.
+-   "Run Commit Groq": automatically generates a commit message for your commit.
+-   "Reset API Commit Groq": resets your API key.
 
-- Model: You can select the model from the plugin configuration.
+-   Model: You can select the model from the plugin configuration.
 
 `llama3-groq-8b-8192-tool-use-preview` - default
 
@@ -57,9 +56,9 @@ This extension contributes the following settings:
 
 `gemma2-9b-it`
 
-Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
+-   Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
-Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
+-   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
  "commitollama.commitEmojis": {
@@ -74,15 +73,15 @@ Custom Emojis: It allows you to write down the emojis you want to use in the nex
 }
 ```
 
-- Custom Endpoint: Ollama usually uses port 11434. It is the value that will be used if empty.
+-   Custom Endpoint: Ollama usually uses port 11434. It is the value that will be used if empty.
 
-- Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
+-   Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
-- Custom Commit Prompt: The prompt that will be used to generate the commit message.
+-   Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
-- Custom Summary Temperature: The temperature that will be used to generate the summary of all git diff.
+-   Custom Summary Temperature: The temperature that will be used to generate the summary of all git diff.
 
-- Custom Commit Temperature: The temperature that will be used to generate the commit message.
+-   Custom Commit Temperature: The temperature that will be used to generate the commit message.
 
 ## Known Issues
 
@@ -92,7 +91,8 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ## For more information
 
-- [Groq Documentation](https://www.groq.com/docs)
-- [Commit Groq GitHub Repository](https://github.com/FrancoStino/commitgroq)
+-   [Groq Documentation](https://www.groq.com/docs)
+-   [Commit Groq GitHub Repository](https://github.com/FrancoStino/commitgroq)
 
-**Happy coding with Commit Groq!**
+> [!NOTE]  
+> **Happy coding with Commit Groq!**
