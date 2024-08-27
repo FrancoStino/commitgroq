@@ -42,13 +42,15 @@ This extension contributes the following settings:
 
 -   Model: You can select the model from the plugin configuration.
 
-`llama3-groq-8b-8192-tool-use-preview` - default
+`llama-3.1-8b-instant` - default
 
-`llama3-groq-70b-8192-tool-use-preview`
+`llama-3.1-70b-versatile`
 
 `llama3-70b-8192`
 
 `llama3-8b-8192`
+
+`llama-guard-3-8b`
 
 `mixtral-8x7b-32768`
 
