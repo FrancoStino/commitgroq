@@ -1,3 +1,8 @@
+## [v1.1.5] - 2024-08-27
+### :wrench: Chores
+- [`3ffe1fa`](https://github.com/FrancoStino/commitgroq/commit/3ffe1fa7d1268b979ff4c46a2c91084488a16071) - Bump version to 1.1.5 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.4] - 2024-08-27
 ### :sparkles: New Features
 - [`e6bdebc`](https://github.com/FrancoStino/commitgroq/commit/e6bdebc43c175d2541e81a188eabc668d739f565) - Add initial metadata.json schema *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -102,3 +107,4 @@
 [v1.1.2.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.2...v1.1.2.1
 [v1.1.3]: https://github.com/FrancoStino/commitgroq/compare/v1.1.2.1...v1.1.3
 [v1.1.4]: https://github.com/FrancoStino/commitgroq/compare/v1.1.3...v1.1.4
+[v1.1.5]: https://github.com/FrancoStino/commitgroq/compare/v1.1.4...v1.1.5
