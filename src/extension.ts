@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		// Chiedi all'utente di inserire la API key
 		const apiKey = await vscode.window.showInputBox({
-			prompt: 'Inserisci la tua API Key',
+			prompt: 'Insert your API Key',
 			ignoreFocusOut: true,
 			password: true
 		});
