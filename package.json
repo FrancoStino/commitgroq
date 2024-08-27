@@ -32,7 +32,7 @@
             },
             {
                 "command": "commitgroq.createCommit",
-                "title": "Run Commit Groq",
+                "title": "Commit Groq",
                 "icon": "$(sparkle)"
             }
         ],
