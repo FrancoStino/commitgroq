@@ -1,152 +1,152 @@
 {
-  "name": "commitgroq",
-  "displayName": "Commit Groq AI",
-  "description": "Generative Commit AI with Groq",
-  "version": "1.1.3",
-  "publisher": "DavideLadisa",
-  "engines": {
-    "vscode": "^1.91.0"
-  },
-  "categories": [
-    "Machine Learning",
-    "Programming Languages",
-    "AI"
-  ],
-  "icon": "assets/icon.png",
-  "license": "MIT",
-  "keywords": [
-    "code",
-    "assistant",
-    "ai",
-    "llm",
-    "commits",
-    "groq"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "commitgroq.resetGroqApiKey",
-        "title": "Reset Groq API Key"
-      },
-      {
-        "command": "commitgroq.createCommit",
-        "title": "Run Commit Groq",
-        "icon": "$(sparkle)"
-      }
-    ],
-    "menus": {
-      "scm/title": [
-        {
-          "when": "scmProvider == git",
-          "command": "commitgroq.createCommit",
-          "group": "navigation"
-        }
-      ]
+    "name": "commitgroq",
+    "displayName": "Commit Groq AI",
+    "description": "Generative Commit AI with Groq",
+    "version": "1.1.4",
+    "publisher": "DavideLadisa",
+    "engines": {
+        "vscode": "^1.91.0"
     },
-    "configuration": [
-      {
-        "title": "Commit Groq",
-        "properties": {
-          "commitgroq.model": {
-            "type": "string",
-            "enum": [
-              "llama3-groq-8b-8192-tool-use-preview",
-              "llama3-groq-70b-8192-tool-use-preview",
-              "llama3-70b-8192",
-              "llama3-8b-8192",
-              "mixtral-8x7b-32768",
-              "gemma-7b-it",
-              "gemma2-9b-it"
-            ],
-            "default": "llama3-groq-8b-8192-tool-use-preview",
-            "description": "Model to use for the commit creations.",
-            "order": 1
-          },
-          "commitgroq.useEmojis": {
-            "type": "boolean",
-            "default": false,
-            "description": "Enable or disable the use of emojis in commit messages.",
-            "order": 2
-          },
-          "commitgroq.commitEmojis": {
-            "type": "object",
-            "default": {
-              "feat": "✨",
-              "fix": "🐛",
-              "docs": "📝",
-              "style": "💎",
-              "refactor": "♻️",
-              "test": "🧪",
-              "chore": "📦",
-              "revert": "⏪"
+    "categories": [
+        "Machine Learning",
+        "Programming Languages",
+        "AI"
+    ],
+    "icon": "assets/icon.png",
+    "license": "MIT",
+    "keywords": [
+        "code",
+        "assistant",
+        "ai",
+        "llm",
+        "commits",
+        "groq"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "commitgroq.resetGroqApiKey",
+                "title": "Reset Groq API Key"
             },
-            "description": "Map commit types to emojis. Only used if emojis are enabled.",
-            "order": 3
-          },
-          "commitgroq.custom.summaryPrompt": {
-            "type": "string",
-            "default": "",
-            "description": "Custom prompt for summarize the git diff.",
-            "order": 4
-          },
-          "commitgroq.custom.summaryTemperature": {
-            "type": "number",
-            "default": 0.8,
-            "minimum": 0,
-            "maximum": 2,
-            "description": "Custom temperature for summarize the git diff. (between 0 and 2)",
-            "order": 5
-          },
-          "commitgroq.custom.commitPrompt": {
-            "type": "string",
-            "default": "",
-            "description": "Custom prompt for commit message.",
-            "order": 6
-          },
-          "commitgroq.custom.commitTemperature": {
-            "type": "number",
-            "default": 0.2,
-            "minimum": 0,
-            "maximum": 1,
-            "description": "Custom temperature for commit message. (greater = more creative)",
-            "order": 7
-          }
-        }
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
-    "lint": "eslint src --ext ts",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/mocha": "^10.0.7",
-    "@types/node": "22.0.1",
-    "@types/vscode": "^1.91.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1",
-    "esbuild": "^0.23.0",
-    "eslint": "^9.8.0",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "groq-sdk": "^0.5.0"
-  },
-  "bugs": {
-    "url": "https://github.com/FrancoStino/commitgroq/issues",
-    "email": "info@davideladisa.it"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/FrancoStino/commitgroq.git"
-  },
-  "homepage": "https://github.com/FrancoStino/commitgroq/blob/main/README.md"
+            {
+                "command": "commitgroq.createCommit",
+                "title": "Run Commit Groq",
+                "icon": "$(sparkle)"
+            }
+        ],
+        "menus": {
+            "scm/title": [
+                {
+                    "when": "scmProvider == git",
+                    "command": "commitgroq.createCommit",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configuration": [
+            {
+                "title": "Commit Groq",
+                "properties": {
+                    "commitgroq.model": {
+                        "type": "string",
+                        "enum": [
+                            "llama3-groq-8b-8192-tool-use-preview",
+                            "llama3-groq-70b-8192-tool-use-preview",
+                            "llama3-70b-8192",
+                            "llama3-8b-8192",
+                            "mixtral-8x7b-32768",
+                            "gemma-7b-it",
+                            "gemma2-9b-it"
+                        ],
+                        "default": "llama3-groq-8b-8192-tool-use-preview",
+                        "description": "Model to use for the commit creations.",
+                        "order": 1
+                    },
+                    "commitgroq.useEmojis": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the use of emojis in commit messages.",
+                        "order": 2
+                    },
+                    "commitgroq.commitEmojis": {
+                        "type": "object",
+                        "default": {
+                            "feat": "✨",
+                            "fix": "🐛",
+                            "docs": "📝",
+                            "style": "💎",
+                            "refactor": "♻️",
+                            "test": "🧪",
+                            "chore": "📦",
+                            "revert": "⏪"
+                        },
+                        "description": "Map commit types to emojis. Only used if emojis are enabled.",
+                        "order": 3
+                    },
+                    "commitgroq.custom.summaryPrompt": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Custom prompt for summarize the git diff.",
+                        "order": 4
+                    },
+                    "commitgroq.custom.summaryTemperature": {
+                        "type": "number",
+                        "default": 0.8,
+                        "minimum": 0,
+                        "maximum": 2,
+                        "description": "Custom temperature for summarize the git diff. (between 0 and 2)",
+                        "order": 5
+                    },
+                    "commitgroq.custom.commitPrompt": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Custom prompt for commit message.",
+                        "order": 6
+                    },
+                    "commitgroq.custom.commitTemperature": {
+                        "type": "number",
+                        "default": 0.2,
+                        "minimum": 0,
+                        "maximum": 1,
+                        "description": "Custom temperature for commit message. (greater = more creative)",
+                        "order": 7
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "yarn run compile && yarn run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.7",
+        "@types/node": "22.0.1",
+        "@types/vscode": "^1.91.0",
+        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@typescript-eslint/parser": "^8.0.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "esbuild": "^0.23.0",
+        "eslint": "^9.8.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "groq-sdk": "^0.5.0"
+    },
+    "bugs": {
+        "url": "https://github.com/FrancoStino/commitgroq/issues",
+        "email": "info@davideladisa.it"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FrancoStino/commitgroq.git"
+    },
+    "homepage": "https://github.com/FrancoStino/commitgroq/blob/main/README.md"
 }
