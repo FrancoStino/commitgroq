@@ -1,5 +1,4 @@
 import { workspace, ExtensionContext } from "vscode";
-import { type EmojisMap, Model } from "./types/llm";
 import { getApiKey } from "./types/apiKeyManager";
 
 // export const defaultConfig = {
@@ -37,7 +36,7 @@ class Config {
 
         // Load Emojis Config
         const useEmojis: boolean = config.get("useEmojis") as boolean;
-        const commitEmojis: EmojisMap = config.get("commitEmojis") as EmojisMap;
+        const commitEmojis: string = config.get('commitEmojis') as string;
 
         // Load custom prompt and temperatures
         const summaryPrompt = config.get("custom.summaryPrompt") as string;

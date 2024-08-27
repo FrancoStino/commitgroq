@@ -3,6 +3,7 @@ import type { GitExtension, Repository } from "./types/git";
 import { getCommitMessage, getSummary } from "./generator";
 import { getApiKey, saveApiKey, resetApiKey } from "./types/apiKeyManager";
 
+
 export function activate(context: vscode.ExtensionContext) {
 	// Comando per creare un commit e poi eseguire il comando per salvare la API key
 	const createCommitDisposable = vscode.commands.registerCommand("commitgroq.createCommit", async (uri?) => {
