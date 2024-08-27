@@ -1,3 +1,19 @@
+## [v1.1.4] - 2024-08-27
+### :sparkles: New Features
+- [`e6bdebc`](https://github.com/FrancoStino/commitgroq/commit/e6bdebc43c175d2541e81a188eabc668d739f565) - Add initial metadata.json schema *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :recycle: Refactors
+- [`8f01a45`](https://github.com/FrancoStino/commitgroq/commit/8f01a4575613f32c98fa0cacd477839c6abd62af) - Update config, remove unused import and Model enum *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :art: Code Style Changes
+- [`54ffcca`](https://github.com/FrancoStino/commitgroq/commit/54ffcca6f53c77b55fc1f4fcde98c8ce6cd697a8) - Update title of commitgroq.createCommit command *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :wrench: Chores
+- [`a70b7a8`](https://github.com/FrancoStino/commitgroq/commit/a70b7a884b6df61f0cbf141326aa0806c0c806e2) - Update version number in package.json *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`5ac5747`](https://github.com/FrancoStino/commitgroq/commit/5ac5747fabf105d94cb900201f6e435ced30a0af) - Update Yarn install state file *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`dfb7b5c`](https://github.com/FrancoStino/commitgroq/commit/dfb7b5ccd7b1b8332a379024a73286393a402df7) - Update model names, API key prompt, and dependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.3] - 2024-08-02
 ### :flying_saucer: Other Changes
 - [`db9d4f4`](https://github.com/FrancoStino/commitgroq/commit/db9d4f4f0583bf55049502bc9554e4c901e425ad) - chore 📦: update package version to 1.1.3 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -85,3 +101,4 @@
 [v1.1.2]: https://github.com/FrancoStino/commitgroq/compare/v1.1.1...v1.1.2
 [v1.1.2.1]: https://github.com/FrancoStino/commitgroq/compare/v1.1.2...v1.1.2.1
 [v1.1.3]: https://github.com/FrancoStino/commitgroq/compare/v1.1.2.1...v1.1.3
+[v1.1.4]: https://github.com/FrancoStino/commitgroq/compare/v1.1.3...v1.1.4
