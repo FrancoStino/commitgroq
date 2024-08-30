@@ -37,7 +37,8 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
 This extension contributes the following settings:
 
--   "Run Commit Groq": automatically generates a commit message for your commit.
+-   Run "Commit Groq": automatically generates a commit message for your commit.
+
 -   "Reset API Commit Groq": resets your API key.
 
 -   Model: You can select the model from the plugin configuration.
@@ -74,8 +75,6 @@ This extension contributes the following settings:
   "revert": "⏪"
 }
 ```
-
--   Custom Endpoint: Ollama usually uses port 11434. It is the value that will be used if empty.
 
 -   Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
