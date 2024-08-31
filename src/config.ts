@@ -1,22 +1,6 @@
 import { workspace, ExtensionContext } from "vscode";
 import { getApiKey } from "./types/apiKeyManager";
 
-// export const defaultConfig = {
-//     model: Model.Llama3,
-//     useEmojis: false,
-//     commitEmojis: {
-//         feat: "✨",
-//         fix: "🐛",
-//         docs: "📝",
-//         style: "💎",
-//         refactor: "♻️",
-//         test: "🧪",
-//         chore: "📦",
-//         revert: "⏪",
-//     },
-//     temperature: 0.8,
-//     // num_predict: 100,
-// };
 
 class Config {
     private context: ExtensionContext;

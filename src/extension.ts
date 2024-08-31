@@ -103,9 +103,7 @@ async function createCommitMessage(context: vscode.ExtensionContext, repo: Repos
 				const commitMessage = await getCommitMessage(context, summaries);
 				repo.inputBox.value = commitMessage;
 
-				// TODO: Update dinamically the models "properties" => "commitgroq.model"
 
-				// biome-ignore lint/suspicious/noExplicitAny: no-explicit-any for error handling
 			} catch (error: any) {
 				if (error?.message) {
 					vscode.window.showErrorMessage(error.message);
