@@ -2,7 +2,7 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.92.0"
@@ -65,11 +65,17 @@
                         "description": "Model to use for the commit creations.",
                         "order": 1
                     },
+                    "commitgroq.useDescription": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the use of commit description.",
+                        "order": 2
+                    },
                     "commitgroq.useEmojis": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the use of emojis in commit messages.",
-                        "order": 2
+                        "order": 3
                     },
                     "commitgroq.commitEmojis": {
                         "type": "object",
@@ -84,13 +90,13 @@
                             "revert": "⏪"
                         },
                         "description": "Map commit types to emojis. Only used if emojis are enabled.",
-                        "order": 3
+                        "order": 4
                     },
                     "commitgroq.custom.summaryPrompt": {
                         "type": "string",
                         "default": "",
                         "description": "Custom prompt for summarize the git diff.",
-                        "order": 4
+                        "order": 5
                     },
                     "commitgroq.custom.summaryTemperature": {
                         "type": "number",
@@ -98,13 +104,13 @@
                         "minimum": 0,
                         "maximum": 2,
                         "description": "Custom temperature for summarize the git diff. (between 0 and 2)",
-                        "order": 5
+                        "order": 6
                     },
                     "commitgroq.custom.commitPrompt": {
                         "type": "string",
                         "default": "",
                         "description": "Custom prompt for commit message.",
-                        "order": 6
+                        "order": 7
                     },
                     "commitgroq.custom.commitTemperature": {
                         "type": "number",
@@ -112,7 +118,7 @@
                         "minimum": 0,
                         "maximum": 1,
                         "description": "Custom temperature for commit message. (greater = more creative)",
-                        "order": 7
+                        "order": 8
                     }
                 }
             }
