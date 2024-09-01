@@ -18,6 +18,9 @@ class Config {
         // Load model
         let modelName: string = config.get("model") as string;
 
+        // Load description
+        const useDescription: boolean = config.get("useDescription") as boolean;
+
         // Load Emojis Config
         const useEmojis: boolean = config.get("useEmojis") as boolean;
         const commitEmojis: string = config.get('commitEmojis') as string;
@@ -31,6 +34,7 @@ class Config {
         return {
             apiKeyGroq,
             modelName,
+            useDescription,
             summaryPrompt,
             summaryTemperature,
             commitPrompt,

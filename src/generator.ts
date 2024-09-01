@@ -76,6 +76,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         useEmojis,
         commitEmojis,
         modelName,
+        useDescription,
     } = inferenceConfig;
 
     const groq = new Groq({ apiKey: apiKeyGroq });
@@ -116,6 +117,11 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
                 const regex = new RegExp(`\\b${type}\\b`, "g");
                 commit = commit.replace(regex, `${type} ${emoji}`);
             }
+        }
+
+        // Add files summaries as description if useDescription is activated
+        if (useDescription) {
+            commit = `${commit}\n\n${summaries.map((s) => `- ${s}`).join("\n")}`;
         }
 
         return commit.trim();
