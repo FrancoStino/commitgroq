@@ -1,3 +1,10 @@
+## [v2.1.0] - 2024-09-01
+### :sparkles: New Features
+- [`a659eeb`](https://github.com/FrancoStino/commitgroq/commit/a659eebf170be8b542a382f6e6816d1e0056f113) - Add cloud capabilities and telemetry settings *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`db0fb11`](https://github.com/FrancoStino/commitgroq/commit/db0fb11604b8c856df337fe9c1f59b6b1f37a1a8) - Add config option to load description setting *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`18d7f39`](https://github.com/FrancoStino/commitgroq/commit/18d7f39ca2b82eda2dd138079af39474d832fe8a) - Add config option to enable/disable commit descriptions *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v2.0.0] - 2024-08-31
 ### :recycle: Refactors
 - [`9f113e2`](https://github.com/FrancoStino/commitgroq/commit/9f113e2287a79f4c1e884ac6dc9807359a09dcce) - Clean up and enhance TypeScript definitions *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -118,3 +125,4 @@
 [v1.1.4]: https://github.com/FrancoStino/commitgroq/compare/v1.1.3...v1.1.4
 [v1.1.5]: https://github.com/FrancoStino/commitgroq/compare/v1.1.4...v1.1.5
 [v2.0.0]: https://github.com/FrancoStino/commitgroq/compare/v1.1.5...v2.0.0
+[v2.1.0]: https://github.com/FrancoStino/commitgroq/compare/v2.0.0...v2.1.0
