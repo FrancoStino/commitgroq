@@ -1,3 +1,8 @@
+## [v2.1.2] - 2024-09-02
+### :recycle: Refactors
+- [`da0e672`](https://github.com/FrancoStino/commitgroq/commit/da0e672d325a5301740b5e582b550c6f8e65c570) - Improve readability and update version to 2.1.2 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v2.1.1] - 2024-09-02
 ### :wrench: Chores
 - [`5277416`](https://github.com/FrancoStino/commitgroq/commit/52774163ad965457da6a265a1f656f380f86a798) - Update version number to 2.1.1 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -132,3 +137,4 @@
 [v2.0.0]: https://github.com/FrancoStino/commitgroq/compare/v1.1.5...v2.0.0
 [v2.1.0]: https://github.com/FrancoStino/commitgroq/compare/v2.0.0...v2.1.0
 [v2.1.1]: https://github.com/FrancoStino/commitgroq/compare/v2.1.0...v2.1.1
+[v2.1.2]: https://github.com/FrancoStino/commitgroq/compare/v2.1.1...v2.1.2
