@@ -130,7 +130,7 @@ This extension contributes the following settings:
 -   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
- "commitollama.commitEmojis": {
+ "commitgroq.commitEmojis": {
   "feat": "✨",
   "fix": "🐛",
   "docs": "📝",
