@@ -1,3 +1,8 @@
+## [v2.1.1] - 2024-09-02
+### :wrench: Chores
+- [`5277416`](https://github.com/FrancoStino/commitgroq/commit/52774163ad965457da6a265a1f656f380f86a798) - Update version number to 2.1.1 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v2.1.0] - 2024-09-01
 ### :sparkles: New Features
 - [`a659eeb`](https://github.com/FrancoStino/commitgroq/commit/a659eebf170be8b542a382f6e6816d1e0056f113) - Add cloud capabilities and telemetry settings *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -126,3 +131,4 @@
 [v1.1.5]: https://github.com/FrancoStino/commitgroq/compare/v1.1.4...v1.1.5
 [v2.0.0]: https://github.com/FrancoStino/commitgroq/compare/v1.1.5...v2.0.0
 [v2.1.0]: https://github.com/FrancoStino/commitgroq/compare/v2.0.0...v2.1.0
+[v2.1.1]: https://github.com/FrancoStino/commitgroq/compare/v2.1.0...v2.1.1
