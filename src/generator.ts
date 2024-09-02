@@ -121,7 +121,9 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
 
         // Add files summaries as description if useDescription is activated
         if (useDescription) {
-            commit = `${commit}\n\n${summaries.map((s) => `- ${s}`).join("\n")}`;
+            const descriptionLines = summaries.map((s) => '- ' + s);
+            const description = descriptionLines.join('\n');
+            commit = commit + '\n\n' + description;
         }
 
         return commit.trim();
