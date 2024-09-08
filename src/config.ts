@@ -1,4 +1,4 @@
-import { workspace, ExtensionContext, window } from "vscode";
+import { workspace, ExtensionContext } from "vscode";
 import { initializeApiKey } from "./types/apiKeyManager";
 
 
