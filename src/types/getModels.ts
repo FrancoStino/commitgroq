@@ -28,7 +28,7 @@ export async function getModels(context: vscode.ExtensionContext) {
 
         const selectedModel = await vscode.window.showQuickPick(
             models
-                .filter(model => model.active !== false && ['Google', 'Groq', 'Meta', 'Mistral AI'].includes(model.owned_by || ''))
+                .filter(model => model.active !== false && ['Google', 'Groq', 'Meta', 'Mistral AI'].includes(model.owned_by ?? ''))
                 .map(model => ({
                     label: model.id,
                     description: model.owned_by,
