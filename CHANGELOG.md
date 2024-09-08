@@ -1,3 +1,14 @@
+## [v3.0.0] - 2024-09-08
+### :sparkles: New Features
+- [`f17c781`](https://github.com/FrancoStino/commitgroq/commit/f17c7817d15e7632e0393720faf73063d3b86a3d) - Add new images and update/remove existing ones *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`cbe6832`](https://github.com/FrancoStino/commitgroq/commit/cbe683243faea70381c97a01dfd752acc65753a7) - Add model fetch command, improve API key management *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`daee3d4`](https://github.com/FrancoStino/commitgroq/commit/daee3d42b559d6bd21272979db7227da9bbcb786) - Update and add dependencies in yarn.lock *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`3777b3a`](https://github.com/FrancoStino/commitgroq/commit/3777b3a30d77f6e3bec107532519d946948e0b27) - Update changelog workflow to include docs changes *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`40a89b6`](https://github.com/FrancoStino/commitgroq/commit/40a89b6bd1ce2e62f66aaa60f89904a879a7514d) - Update versions, titles, descriptions, and add command *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v2.1.2] - 2024-09-02
 ### :recycle: Refactors
 - [`da0e672`](https://github.com/FrancoStino/commitgroq/commit/da0e672d325a5301740b5e582b550c6f8e65c570) - Improve readability and update version to 2.1.2 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -160,3 +171,4 @@
 [v2.1.0]: https://github.com/FrancoStino/commitgroq/compare/v2.0.0...v2.1.0
 [v2.1.1]: https://github.com/FrancoStino/commitgroq/compare/v2.1.0...v2.1.1
 [v2.1.2]: https://github.com/FrancoStino/commitgroq/compare/v2.1.1...v2.1.2
+[v3.0.0]: https://github.com/FrancoStino/commitgroq/compare/v2.1.2...v3.0.0
