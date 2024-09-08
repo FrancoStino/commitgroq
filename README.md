@@ -22,6 +22,8 @@
 
 ---
 
+Commit Groq AI is a Visual Studio Code extension that uses the Groq API to enhance the code commit process.
+
 ## Configuration
 
 To use Commit Groq, you need to configure your Groq API key. Follow these steps:
@@ -29,9 +31,8 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 1. Get an [API key from Groq](https://console.groq.com/keys) (if you don't have one already).
 2. Click on Sparkle icon on Source Control Bar.
 3. Insert your **Free** or **Paid** API key.
-4. Open VS Code settings (File > Preferences > Settings).
-5. Search for "Commit Groq AI" in the settings in you want customize it.
-6. Enjoy.
+4. Select Model if it's not already selected.
+5. Enjoy.
 
 ## Features
 
@@ -40,11 +41,6 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 -   Automatic generation of commit messages based on modified code.
 -   Code analysis for improvement suggestions before committing.
 -   Seamless integration with Git workflow in VS Code.
-
-## Reset API Key
-
-1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
-2. Type "Reset Groq API Key"
 
 ## Usage
 
@@ -57,11 +53,9 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 
 This extension contributes the following settings:
 
--   Run "Commit Groq AI": automatically generates a commit message for your commit.
+-   Run "Commit Groq AI" or click on sparkle icon on Source Control Bar: automatically generates a commit message for your commit.
 
--   "Reset API Commit Groq": resets your API key.
-
--   Model: You can select the model from the plugin configuration.
+-   Model: You can select the model from the plugin configuration on settings.
 
 <table>
     <thead>
@@ -73,13 +67,43 @@ This extension contributes the following settings:
     </thead>
     <tbody>
         <tr>
+            <td><code>gemma-7b-it</code></td>
+            <td><img src="/assets/google.png" width="20"/>
+            <code>Google</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>gemma2-9b-it</code></td>
+            <td><img src="/assets/google.png" width="20"/>
+            <code>Google</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama3-groq-70b-8192-tool-use-preview</code></td>
+            <td><img src="/assets/groq.png" width="20"/>
+            <code>Groq</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama3-groq-8b-8192-tool-use-preview</code></td>
+            <td><img src="/assets/groq.png" width="20"/>
+            <code>Groq</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama-3.1-70b-versatile</code></td>
+            <td><img src="/assets/meta.png" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
             <td><code>llama-3.1-8b-instant</code></td>
             <td><img src="/assets/meta.png" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
-            <td><code>llama-3.1-70b-versatile</code></td>
+            <td><code>llama-guard-3-8b</code></td>
             <td><img src="/assets/meta.png" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
@@ -97,27 +121,9 @@ This extension contributes the following settings:
             <td><code>Cloud</code></td>
         </tr>
         <tr>
-            <td><code>llama-guard-3-8b</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
-            <code>Meta</code></td>
-            <td><code>Cloud</code></td>
-        </tr>
-        <tr>
             <td><code>mixtral-8x7b-32768</code></td>
-            <td><img src="/assets/mixtral.webp" width="20"/>
+            <td><img src="/assets/mistral-ai.png" width="20"/>
             <code>Mixtral</code></td>
-            <td><code>Cloud</code></td>
-        </tr>
-        <tr>
-            <td><code>gemma-7b-it</code></td>
-            <td><img src="/assets/google.png" width="20"/>
-            <code>Google</code></td>
-            <td><code>Cloud</code></td>
-        </tr>
-        <tr>
-            <td><code>gemma2-9b-it</code></td>
-            <td><img src="/assets/google.png" width="20"/>
-            <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
     </tbody>
@@ -150,6 +156,21 @@ This extension contributes the following settings:
 
 -   Custom Commit Temperature: The temperature that will be used to generate the commit message.
 
+#### Reset API Key
+
+1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
+2. Type "Reset Groq API Key"
+
+#### Get Models
+
+1. Go to settings -> Search for "Commit Groq AI" -> Model
+2. Click on link "Get Groq Models"
+
+###### OR
+
+1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
+2. Type "Get Groq Models"
+
 ## Known Issues
 
 There are currently no known issues. If you encounter any problems, please open an issue on our GitHub repository.
@@ -159,4 +180,8 @@ There are currently no known issues. If you encounter any problems, please open 
 > ## For more information
 >
 > -   [Groq Documentation](https://www.groq.com/docs)
-> -   [Commit Groq GitHub Repository](https://github.com/>FrancoStino/commitgroq) > **Happy coding with Commit Groq!**
+> -   [Commit Groq GitHub Repository](https://github.com/>FrancoStino/commitgroq)
+
+---
+
+> **Happy coding with Commit Groq!**
