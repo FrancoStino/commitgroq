@@ -45,15 +45,13 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 ## Usage
 
 1. Make your code changes as usual.
-2. When you're ready to commit, use the "Commit Groq AI" command from the command palette (Ctrl+Shift+P).
+2. When you're ready to commit, use the "Commit Groq AI" command from the command palette `CTRL+SHIFT+P` or `CMD+SHIFT+P`.
 3. The extension will generate a commit message based on your changes.
 4. Review and modify the message if necessary, then proceed with the commit.
 
 ## Settings
 
 This extension contributes the following settings:
-
--   Run "Commit Groq AI" or click on sparkle icon on Source Control Bar: automatically generates a commit message for your commit.
 
 -   Model: You can select the model from the plugin configuration on settings.
 
