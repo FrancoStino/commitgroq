@@ -50,7 +50,7 @@ jobs:
           toTag: ${{ env.previousTag }}
           # useGitmojis: true
           includeInvalidCommits: true
-          excludeTypes: docs
+          # excludeTypes: docs
 
           
       # - name: Create Release

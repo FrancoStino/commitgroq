@@ -2,10 +2,10 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "2.1.2",
+    "version": "3.0.0",
     "publisher": "DavideLadisa",
     "engines": {
-        "vscode": "^1.92.0"
+        "vscode": "^1.93.0"
     },
     "categories": [
         "Machine Learning",
@@ -28,12 +28,16 @@
         "commands": [
             {
                 "command": "commitgroq.resetGroqApiKey",
-                "title": "Reset Groq API Key"
+                "title": "Commit Groq: Reset Groq API Key"
             },
             {
                 "command": "commitgroq.createCommit",
-                "title": "Commit Groq AI",
+                "title": "Commit Groq: Commit Groq AI",
                 "icon": "$(sparkle)"
+            },
+            {
+                "command": "commitgroq.getModels",
+                "title": "Commit Groq: Get Models from Groq"
             }
         ],
         "menus": {
@@ -47,22 +51,11 @@
         },
         "configuration": [
             {
-                "title": "Models",
+                "title": "Commit Groq AI",
                 "properties": {
                     "commitgroq.model": {
                         "type": "string",
-                        "enum": [
-                            "llama-3.1-8b-instant",
-                            "llama-3.1-70b-versatile",
-                            "llama3-70b-8192",
-                            "llama3-8b-8192",
-                            "llama-guard-3-8b",
-                            "mixtral-8x7b-32768",
-                            "gemma-7b-it",
-                            "gemma2-9b-it"
-                        ],
-                        "default": "llama-3.1-8b-instant",
-                        "description": "Model to use for the commit creations.",
+                        "markdownDescription": "Model to use for the commit creations.\n\n🡺 **Click here to [get Groq Models](command:commitgroq.getModels)** 🡸",
                         "order": 1
                     },
                     "commitgroq.useDescription": {
@@ -134,18 +127,18 @@
     },
     "devDependencies": {
         "@types/mocha": "^10.0.7",
-        "@types/node": "22.5.1",
-        "@types/vscode": "^1.92.0",
-        "@typescript-eslint/eslint-plugin": "^8.3.0",
-        "@typescript-eslint/parser": "^8.3.0",
+        "@types/node": "22.5.4",
+        "@types/vscode": "^1.93.0",
+        "@typescript-eslint/eslint-plugin": "^8.4.0",
+        "@typescript-eslint/parser": "^8.4.0",
         "@vscode/test-cli": "^0.0.10",
         "@vscode/test-electron": "^2.4.1",
         "esbuild": "^0.23.1",
-        "eslint": "^9.9.1",
+        "eslint": "^9.10.0",
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "groq-sdk": "^0.6.1"
+        "groq-sdk": "^0.7.0"
     },
     "bugs": {
         "url": "https://github.com/FrancoStino/commitgroq/issues",
