@@ -66,61 +66,61 @@ This extension contributes the following settings:
     <tbody>
         <tr>
             <td><code>gemma-7b-it</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemma2-9b-it</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama3-groq-70b-8192-tool-use-preview</code></td>
-            <td><img src="/assets/groq.png" width="20"/>
+            <td><img src="/assets/groq.webp" width="20"/>
             <code>Groq</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama3-groq-8b-8192-tool-use-preview</code></td>
-            <td><img src="/assets/groq.png" width="20"/>
+            <td><img src="/assets/groq.webp" width="20"/>
             <code>Groq</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama-3.1-70b-versatile</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
+            <td><img src="/assets/meta.webp" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama-3.1-8b-instant</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
+            <td><img src="/assets/meta.webp" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama-guard-3-8b</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
+            <td><img src="/assets/meta.webp" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama3-70b-8192</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
+            <td><img src="/assets/meta.webp" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>llama3-8b-8192</code></td>
-            <td><img src="/assets/meta.png" width="20"/>
+            <td><img src="/assets/meta.webp" width="20"/>
             <code>Meta</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>mixtral-8x7b-32768</code></td>
-            <td><img src="/assets/mistral-ai.png" width="20"/>
+            <td><img src="/assets/mistral-ai.webp" width="20"/>
             <code>Mixtral</code></td>
             <td><code>Cloud</code></td>
         </tr>
