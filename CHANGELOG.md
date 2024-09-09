@@ -1,3 +1,17 @@
+## [v3.1.0] - 2024-09-09
+### :sparkles: New Features
+- [`3e3ff7f`](https://github.com/FrancoStino/commitgroq/commit/3e3ff7fa8fc9b4dcbd70b2a5dd0416a3911a725c) - Update image assets to webp format *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :recycle: Refactors
+- [`7848047`](https://github.com/FrancoStino/commitgroq/commit/7848047614d46b0dc32288b0a044c440d06a1103) - Remove unused import from config file *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`114a68c`](https://github.com/FrancoStino/commitgroq/commit/114a68c22d4d921cb2220ac83aeadbe832221378) - Use nullish coalescing in filter condition *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`0cd5a2d`](https://github.com/FrancoStino/commitgroq/commit/0cd5a2d5d3f703885a64740ff83d59803db64975) - Update version number to 3.0.3 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`fbacb6a`](https://github.com/FrancoStino/commitgroq/commit/fbacb6a8c64ca93397e49177bca81f70ba4c09dc) - Delete google.png image file *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`15094bb`](https://github.com/FrancoStino/commitgroq/commit/15094bb59b2db00ee958d93128cc610fc35f56ea) - Update version and minor text corrections in package.json *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.0.0] - 2024-09-08
 ### :sparkles: New Features
 - [`f17c781`](https://github.com/FrancoStino/commitgroq/commit/f17c7817d15e7632e0393720faf73063d3b86a3d) - Add new images and update/remove existing ones *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -172,3 +186,4 @@
 [v2.1.1]: https://github.com/FrancoStino/commitgroq/compare/v2.1.0...v2.1.1
 [v2.1.2]: https://github.com/FrancoStino/commitgroq/compare/v2.1.1...v2.1.2
 [v3.0.0]: https://github.com/FrancoStino/commitgroq/compare/v2.1.2...v3.0.0
+[v3.1.0]: https://github.com/FrancoStino/commitgroq/compare/v3.0.0...v3.1.0
