@@ -32,7 +32,7 @@ export async function getModels(context: vscode.ExtensionContext) {
                 .map(model => ({
                     label: model.id,
                     description: model.owned_by,
-                    iconPath: vscode.Uri.file(context.asAbsolutePath(`assets/${model.owned_by?.toLowerCase().replace(/\s+/g, '-')}.png`)),
+                    iconPath: vscode.Uri.file(context.asAbsolutePath(`assets/${model.owned_by?.toLowerCase().replace(/\s+/g, '-')}.webp`)),
                 }))
                 .sort((a, b) => a.label.localeCompare(b.label)),
             {
