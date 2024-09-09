@@ -2,7 +2,7 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "3.0.3",
+    "version": "3.1.0",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.93.0"
@@ -37,7 +37,7 @@
             },
             {
                 "command": "commitgroq.getModels",
-                "title": "Commit Groq: Get Models from Groq"
+                "title": "Commit Groq: Get models from Groq"
             }
         ],
         "menus": {
@@ -55,7 +55,7 @@
                 "properties": {
                     "commitgroq.model": {
                         "type": "string",
-                        "markdownDescription": "Model to use for the commit creations.\n\n🡺 **Click here to [get Groq Models](command:commitgroq.getModels)** 🡸",
+                        "markdownDescription": "Model to use for the commit creations.\n\n🡺 **Click here to [get Groq models](command:commitgroq.getModels)** 🡸",
                         "order": 1
                     },
                     "commitgroq.useDescription": {
