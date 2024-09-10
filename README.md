@@ -121,7 +121,7 @@ This extension contributes the following settings:
         <tr>
             <td><code>mixtral-8x7b-32768</code></td>
             <td><img src="/assets/mistral-ai.png" width="20"/>
-            <code>Mixtral</code></td>
+            <code>Mistral AI</code></td>
             <td><code>Cloud</code></td>
         </tr>
     </tbody>
