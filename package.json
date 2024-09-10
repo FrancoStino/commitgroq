@@ -2,7 +2,7 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "3.0.0",
+    "version": "3.3.1",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.93.0"
@@ -112,6 +112,18 @@
                         "maximum": 1,
                         "description": "Custom temperature for commit message. (greater = more creative)",
                         "order": 8
+                    },
+                    "commitgroq.commitLowerCase": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be lowercase.",
+                        "order": 9
+                    },
+                    "commitgroq.commitWithoutDotsAtEnd": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be without dot at the end.",
+                        "order": 10
                     }
                 }
             }
