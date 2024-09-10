@@ -113,13 +113,13 @@
                         "description": "Custom temperature for commit message. (greater = more creative)",
                         "order": 8
                     },
-                    "commitgroq.commitLowerCase": {
+                    "commitgroq.ForceCommitLowerCase": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be lowercase.",
                         "order": 9
                     },
-                    "commitgroq.commitWithoutDotsAtEnd": {
+                    "commitgroq.ForceCommitWithoutDotsAtEnd": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be without dot at the end.",
