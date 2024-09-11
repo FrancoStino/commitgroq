@@ -154,9 +154,9 @@ This extension contributes the following settings:
 
 -   Custom Commit Temperature: The temperature that will be used to generate the commit message.
 
--   Custom Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
+-   Force Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
 
--   Custom Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
+-   Force Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
 
 #### Reset API Key
 
