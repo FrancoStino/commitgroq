@@ -121,7 +121,7 @@ This extension contributes the following settings:
         <tr>
             <td><code>mixtral-8x7b-32768</code></td>
             <td><img src="/assets/mistral-ai.webp" width="20"/>
-            <code>Mixtral</code></td>
+            <code>Mistral AI</code></td>
             <td><code>Cloud</code></td>
         </tr>
     </tbody>
@@ -154,6 +154,10 @@ This extension contributes the following settings:
 
 -   Custom Commit Temperature: The temperature that will be used to generate the commit message.
 
+-   Force Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
+
+-   Force Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
+
 #### Reset API Key
 
 1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
@@ -182,4 +186,4 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ---
 
-> **Happy coding with Commit Groq!**
+> **Happy coding with Commit Groq AI!**
