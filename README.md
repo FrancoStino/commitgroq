@@ -186,4 +186,4 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ---
 
-> **Happy coding with Commit Groq!**
+> **Happy coding with Commit Groq AI!**
