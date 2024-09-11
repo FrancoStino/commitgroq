@@ -1,3 +1,17 @@
+## [v3.3.1] - 2024-09-11
+### :sparkles: New Features
+- [`f24b7b1`](https://github.com/FrancoStino/commitgroq/commit/f24b7b14451b3a66b8ff3d0f119f4126316c1a32) - Add config options for commit formatting preferences *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`fee7130`](https://github.com/FrancoStino/commitgroq/commit/fee7130abd25a74b914a5e786deb803d97485179) - Add settings for commit message customization *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :recycle: Refactors
+- [`cab59f5`](https://github.com/FrancoStino/commitgroq/commit/cab59f5e1b0959a6759bf3e77af9f588e960ec1f) - Rename config vars for commit message formatting *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`ada562e`](https://github.com/FrancoStino/commitgroq/commit/ada562e5ea291af9583531cba289d1dee2b07282) - Rename settings for commit message customization *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`b2591cd`](https://github.com/FrancoStino/commitgroq/commit/b2591cd90af70fd2578986a97a99d09860a6030c) - Remove cloudCapabilities and telemetry settings *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`4594eea`](https://github.com/FrancoStino/commitgroq/commit/4594eea7a8bc7ca2d6bf5d7caa39662e70154b37) - Update package version and add config options *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v3.1.0] - 2024-09-09
 ### :sparkles: New Features
 - [`3e3ff7f`](https://github.com/FrancoStino/commitgroq/commit/3e3ff7fa8fc9b4dcbd70b2a5dd0416a3911a725c) - Update image assets to webp format *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -187,3 +201,4 @@
 [v2.1.2]: https://github.com/FrancoStino/commitgroq/compare/v2.1.1...v2.1.2
 [v3.0.0]: https://github.com/FrancoStino/commitgroq/compare/v2.1.2...v3.0.0
 [v3.1.0]: https://github.com/FrancoStino/commitgroq/compare/v3.0.0...v3.1.0
+[v3.3.1]: https://github.com/FrancoStino/commitgroq/compare/v3.1.0...v3.3.1
