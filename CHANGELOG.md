@@ -1,3 +1,11 @@
+## [v3.3.2] - 2024-09-12
+### :bug: Bug Fixes
+- [`c70b6b9`](https://github.com/FrancoStino/commitgroq/commit/c70b6b9fb10f3115b805491ca25bf5cc6bd70eac) - Fix typo in GitHub URL in README *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`67638de`](https://github.com/FrancoStino/commitgroq/commit/67638de15bac8b1b99ac6fa3694ea8240a05fc32) - Bump version to 3.3.2 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.3.1] - 2024-09-11
 ### :sparkles: New Features
 - [`f24b7b1`](https://github.com/FrancoStino/commitgroq/commit/f24b7b14451b3a66b8ff3d0f119f4126316c1a32) - Add config options for commit formatting preferences *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -202,3 +210,4 @@
 [v3.0.0]: https://github.com/FrancoStino/commitgroq/compare/v2.1.2...v3.0.0
 [v3.1.0]: https://github.com/FrancoStino/commitgroq/compare/v3.0.0...v3.1.0
 [v3.3.1]: https://github.com/FrancoStino/commitgroq/compare/v3.1.0...v3.3.1
+[v3.3.2]: https://github.com/FrancoStino/commitgroq/compare/v3.3.1...v3.3.2
