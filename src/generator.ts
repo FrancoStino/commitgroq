@@ -92,8 +92,8 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         commitEmojis,
         modelName,
         useDescription,
-        ForceCommitLowerCase,
-        ForceCommitWithoutDotsAtEnd,
+        forceCommitLowerCase,
+        forceCommitWithoutDotsAtEnd,
     } = inferenceConfig;
 
     const groq = new Groq({ apiKey: apiKeyGroq });
@@ -132,11 +132,11 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         let commit = chatCompletion.choices[0]?.message?.content?.replace(/["`]/g, "") || "";
 
 
-        if (ForceCommitLowerCase) {
+        if (forceCommitLowerCase) {
             commit = commit.toLowerCase();
         }
 
-        if (ForceCommitWithoutDotsAtEnd) {
+        if (forceCommitWithoutDotsAtEnd) {
             commit = commit.replace(/\.$/, "");
         }
 

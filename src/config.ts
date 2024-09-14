@@ -21,8 +21,8 @@ class Config {
         const summaryTemperature: number = config.get("custom.summaryTemperature") as number;
         const commitPrompt: string = config.get("custom.commitPrompt") as string;
         const commitTemperature: number = config.get("custom.commitTemperature") as number;
-        const ForceCommitLowerCase: boolean = config.get("ForceCommitLowerCase") as boolean;
-        const ForceCommitWithoutDotsAtEnd: boolean = config.get("ForceCommitWithoutDotsAtEnd") as boolean;
+        const forceCommitLowerCase: boolean = config.get("forceCommitLowerCase") as boolean;
+        const forceCommitWithoutDotsAtEnd: boolean = config.get("forceCommitWithoutDotsAtEnd") as boolean;
 
         return {
             apiKeyGroq,
@@ -34,8 +34,8 @@ class Config {
             summaryTemperature,
             commitPrompt,
             commitTemperature,
-            ForceCommitLowerCase,
-            ForceCommitWithoutDotsAtEnd,
+            forceCommitLowerCase,
+            forceCommitWithoutDotsAtEnd,
         };
     }
 
