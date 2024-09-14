@@ -1,3 +1,8 @@
+## [v3.3.3] - 2024-09-14
+### :recycle: Refactors
+- [`c005ba7`](https://github.com/FrancoStino/commitgroq/commit/c005ba7e3c111040505f3f0bc0e7ca19961bf92d) - Standardize naming and update package version *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.3.2] - 2024-09-12
 ### :bug: Bug Fixes
 - [`c70b6b9`](https://github.com/FrancoStino/commitgroq/commit/c70b6b9fb10f3115b805491ca25bf5cc6bd70eac) - Fix typo in GitHub URL in README *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -211,3 +216,4 @@
 [v3.1.0]: https://github.com/FrancoStino/commitgroq/compare/v3.0.0...v3.1.0
 [v3.3.1]: https://github.com/FrancoStino/commitgroq/compare/v3.1.0...v3.3.1
 [v3.3.2]: https://github.com/FrancoStino/commitgroq/compare/v3.3.1...v3.3.2
+[v3.3.3]: https://github.com/FrancoStino/commitgroq/compare/v3.3.2...v3.3.3
