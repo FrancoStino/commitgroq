@@ -1,3 +1,8 @@
+## [v3.3.4] - 2024-09-15
+### :wrench: Chores
+- [`ee0c48f`](https://github.com/FrancoStino/commitgroq/commit/ee0c48f8b71582b2fe2d0e3502029b461be4bf20) - Update GitHub Actions workflow and version number *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.3.3] - 2024-09-14
 ### :recycle: Refactors
 - [`c005ba7`](https://github.com/FrancoStino/commitgroq/commit/c005ba7e3c111040505f3f0bc0e7ca19961bf92d) - Standardize naming and update package version *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -217,3 +222,4 @@
 [v3.3.1]: https://github.com/FrancoStino/commitgroq/compare/v3.1.0...v3.3.1
 [v3.3.2]: https://github.com/FrancoStino/commitgroq/compare/v3.3.1...v3.3.2
 [v3.3.3]: https://github.com/FrancoStino/commitgroq/compare/v3.3.2...v3.3.3
+[v3.3.4]: https://github.com/FrancoStino/commitgroq/compare/v3.3.3...v3.3.4
