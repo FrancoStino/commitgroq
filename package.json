@@ -2,7 +2,7 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "3.3.5",
+    "version": "3.4.0",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.93.0"
@@ -113,17 +113,36 @@
                         "description": "Custom temperature for commit message. (greater = more creative)",
                         "order": 8
                     },
+                    "commitgroq.languages": {
+                        "type": "string",
+                        "enum": [
+                            "English",
+                            "Mandarin Chinese",
+                            "Hindi",
+                            "Spanish",
+                            "French",
+                            "Italian",
+                            "Arabic",
+                            "Bengali",
+                            "Russian",
+                            "Portuguese",
+                            "Japanese"
+                        ],
+                        "default": "English",
+                        "description": "Select language to use for the commit message.",
+                        "order": 9
+                    },
                     "commitgroq.forceCommitLowerCase": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be lowercase.",
-                        "order": 9
+                        "order": 10
                     },
                     "commitgroq.forceCommitWithoutDotsAtEnd": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be without dot at the end.",
-                        "order": 10
+                        "order": 11
                     }
                 }
             }
@@ -138,16 +157,16 @@
         "test": "vscode-test"
     },
     "devDependencies": {
-        "@types/mocha": "^10.0.7",
-        "@types/node": "22.5.4",
+        "@types/mocha": "^10.0.8",
+        "@types/node": "22.7.4",
         "@types/vscode": "^1.93.0",
-        "@typescript-eslint/eslint-plugin": "^8.4.0",
-        "@typescript-eslint/parser": "^8.4.0",
+        "@typescript-eslint/eslint-plugin": "^8.7.0",
+        "@typescript-eslint/parser": "^8.7.0",
         "@vscode/test-cli": "^0.0.10",
         "@vscode/test-electron": "^2.4.1",
-        "esbuild": "^0.23.1",
-        "eslint": "^9.10.0",
-        "typescript": "^5.5.4"
+        "esbuild": "^0.24.0",
+        "eslint": "^9.11.1",
+        "typescript": "^5.6.2"
     },
     "dependencies": {
         "groq-sdk": "^0.7.0"
