@@ -1,3 +1,19 @@
+## [v3.4.0] - 2024-09-29
+### :sparkles: New Features
+- [`56b8ab8`](https://github.com/FrancoStino/commitgroq/commit/56b8ab8cd63e851f29a6a866036557176b843fda) - Add language settings and translation support *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`1223eaf`](https://github.com/FrancoStino/commitgroq/commit/1223eafbc0a0f9190df550d64a23889b38043825) - Add translation feature and update settings docs *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :bug: Bug Fixes
+- [`302d110`](https://github.com/FrancoStino/commitgroq/commit/302d110ec4a6f46586c3d9f72312030917d2324f) - delete all old assets *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :recycle: Refactors
+- [`e5c9005`](https://github.com/FrancoStino/commitgroq/commit/e5c9005d38330ed916fb0510af021f549f05e096) - Use Groq SDK and direct imports *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`a782ea3`](https://github.com/FrancoStino/commitgroq/commit/a782ea3c0c24409221fd1515e505f164ca4b10a7) - update version 3.3.5 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`dad1931`](https://github.com/FrancoStino/commitgroq/commit/dad193107c58716759b10d9550ad3bf61c4b61f3) - update dependencies and versioning *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.3.4] - 2024-09-15
 ### :wrench: Chores
 - [`ee0c48f`](https://github.com/FrancoStino/commitgroq/commit/ee0c48f8b71582b2fe2d0e3502029b461be4bf20) - Update GitHub Actions workflow and version number *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -223,3 +239,4 @@
 [v3.3.2]: https://github.com/FrancoStino/commitgroq/compare/v3.3.1...v3.3.2
 [v3.3.3]: https://github.com/FrancoStino/commitgroq/compare/v3.3.2...v3.3.3
 [v3.3.4]: https://github.com/FrancoStino/commitgroq/compare/v3.3.3...v3.3.4
+[v3.4.0]: https://github.com/FrancoStino/commitgroq/compare/v3.3.4...v3.4.0
