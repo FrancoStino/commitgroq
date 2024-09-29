@@ -20,7 +20,8 @@
         "ai",
         "llm",
         "commits",
-        "groq"
+        "groq",
+        "commit ai"
     ],
     "activationEvents": [],
     "main": "./out/extension.js",

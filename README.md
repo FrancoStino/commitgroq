@@ -41,6 +41,7 @@ To use Commit Groq, you need to configure your Groq API key. Follow these steps:
 -   Automatic generation of commit messages based on modified code.
 -   Code analysis for improvement suggestions before committing.
 -   Seamless integration with Git workflow in VS Code.
+-   Ability to translate commit messages into multiple languages.
 
 ## Usage
 
@@ -134,15 +135,15 @@ This extension contributes the following settings:
 -   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
- "commitgroq.commitEmojis": {
-  "feat": "✨",
-  "fix": "🐛",
-  "docs": "📝",
-  "style": "💎",
-  "refactor": "♻️",
-  "test": "🧪",
-  "chore": "📦",
-  "revert": "⏪"
+"commitgroq.commitEmojis": {
+"feat": "✨",
+"fix": "🐛",
+"docs": "📝",
+"style": "💎",
+"refactor": "♻️",
+"test": "🧪",
+"chore": "📦",
+"revert": "⏪"
 }
 ```
 
@@ -157,6 +158,28 @@ This extension contributes the following settings:
 -   Force Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
 
 -   Force Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
+
+-   Commit Language: It allows you to select the language for the commit message translation.
+    <table>
+        <thead>
+            <tr>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>🇬🇧 English</td></tr>
+            <tr><td>🇨🇳 Mandarin Chinese</td></tr>
+            <tr><td>🇮🇳 Hindi</td></tr>
+            <tr><td>🇪🇸 Spanish</td></tr>
+            <tr><td>🇫🇷 French</td></tr>
+            <tr><td>🇮🇹 Italian</td></tr>
+            <tr><td>🇸🇦 Arabic</td></tr>
+            <tr><td>🇧🇩 Bengali</td></tr>
+            <tr><td>🇷🇺 Russian</td></tr>
+            <tr><td>🇵🇹 Portuguese</td></tr>
+            <tr><td>🇯🇵 Japanese</td></tr>
+        </tbody>
+    </table>
 
 #### Reset API Key
 
