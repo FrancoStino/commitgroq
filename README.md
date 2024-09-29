@@ -120,6 +120,36 @@ This extension contributes the following settings:
             <td><code>Cloud</code></td>
         </tr>
         <tr>
+            <td><code>llama-3.2-11b-text-preview</code></td>
+            <td><img src="/assets/meta.webp" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama-3.2-90b-text-preview</code></td>
+            <td><img src="/assets/meta.webp" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama-3.2-3b-preview</code></td>
+            <td><img src="/assets/meta.webp" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama-3.2-11b-vision-preview</code></td>
+            <td><img src="/assets/meta.webp" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
+            <td><code>llama-3.2-1b-preview</code></td>
+            <td><img src="/assets/meta.webp" width="20"/>
+            <code>Meta</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
             <td><code>mixtral-8x7b-32768</code></td>
             <td><img src="/assets/mistral-ai.webp" width="20"/>
             <code>Mistral AI</code></td>
