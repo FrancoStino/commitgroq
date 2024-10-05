@@ -31,9 +31,7 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
         - Do not mention the route of file that has been change.
         - Simply describe the MAIN GOAL of the changes.
         - Output directly the summary in plain text.
-        - Translate all in ${language}.
-
-    `.trim();
+        - Translate all in ${language}.`.trim();
 
     const prompt = summaryPrompt || defaultSummaryPrompt;
 
@@ -117,8 +115,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         - Do not add any issues numeration, explain your output nor introduce your answer.
         - Output directly only one commit message in plain text with the next format: \`{type}: {commit_message}\`.
         - Be as concise as possible, keep the message under 50 characters.
-        - Translate all in ${language}.
-    `.trim();
+        - Translate all in ${language}.`.trim();
 
     const prompt = commitPrompt || defaultCommitPrompt;
 
