@@ -193,7 +193,7 @@ This extension contributes the following settings:
     <table>
         <thead>
             <tr>
-                <th>Language</th>
+                <th>Languages</th>
             </tr>
         </thead>
         <tbody>
