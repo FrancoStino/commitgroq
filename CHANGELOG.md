@@ -1,3 +1,8 @@
+## [v3.4.1] - 2024-09-29
+### :wrench: Chores
+- [`a5f33e6`](https://github.com/FrancoStino/commitgroq/commit/a5f33e6bd6d12302e631b524cf0649a66b75592d) - Update version number to 3.4.1 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.4.0] - 2024-09-29
 ### :sparkles: New Features
 - [`56b8ab8`](https://github.com/FrancoStino/commitgroq/commit/56b8ab8cd63e851f29a6a866036557176b843fda) - Add language settings and translation support *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -240,3 +245,4 @@
 [v3.3.3]: https://github.com/FrancoStino/commitgroq/compare/v3.3.2...v3.3.3
 [v3.3.4]: https://github.com/FrancoStino/commitgroq/compare/v3.3.3...v3.3.4
 [v3.4.0]: https://github.com/FrancoStino/commitgroq/compare/v3.3.4...v3.4.0
+[v3.4.1]: https://github.com/FrancoStino/commitgroq/compare/v3.4.0...v3.4.1
