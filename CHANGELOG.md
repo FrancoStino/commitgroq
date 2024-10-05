@@ -1,3 +1,8 @@
+## [v3.4.2] - 2024-10-05
+### :bug: Bug Fixes
+- [`850b5b8`](https://github.com/FrancoStino/commitgroq/commit/850b5b8dc7ed2ed9cb8dbbdb9b40082bd0b6d68f) - Correct string concatenation logic *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.4.1] - 2024-09-29
 ### :wrench: Chores
 - [`a5f33e6`](https://github.com/FrancoStino/commitgroq/commit/a5f33e6bd6d12302e631b524cf0649a66b75592d) - Update version number to 3.4.1 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -246,3 +251,4 @@
 [v3.3.4]: https://github.com/FrancoStino/commitgroq/compare/v3.3.3...v3.3.4
 [v3.4.0]: https://github.com/FrancoStino/commitgroq/compare/v3.3.4...v3.4.0
 [v3.4.1]: https://github.com/FrancoStino/commitgroq/compare/v3.4.0...v3.4.1
+[v3.4.2]: https://github.com/FrancoStino/commitgroq/compare/v3.4.1...v3.4.2
