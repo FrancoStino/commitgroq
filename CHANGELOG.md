@@ -1,3 +1,9 @@
+## [v3.4.3] - 2024-10-27
+### :wrench: Chores
+- [`f9fd8a8`](https://github.com/FrancoStino/commitgroq/commit/f9fd8a80d3389589945abf42f471c4ea986358e1) - update version requirements in package.json *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`f49c7bb`](https://github.com/FrancoStino/commitgroq/commit/f49c7bb90f3b67a454b481ad218cb9b5ca8d3b9f) - Bump package version to 3.4.3 *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.4.2] - 2024-10-05
 ### :bug: Bug Fixes
 - [`850b5b8`](https://github.com/FrancoStino/commitgroq/commit/850b5b8dc7ed2ed9cb8dbbdb9b40082bd0b6d68f) - Correct string concatenation logic *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -252,3 +258,4 @@
 [v3.4.0]: https://github.com/FrancoStino/commitgroq/compare/v3.3.4...v3.4.0
 [v3.4.1]: https://github.com/FrancoStino/commitgroq/compare/v3.4.0...v3.4.1
 [v3.4.2]: https://github.com/FrancoStino/commitgroq/compare/v3.4.1...v3.4.2
+[v3.4.3]: https://github.com/FrancoStino/commitgroq/compare/v3.4.2...v3.4.3
