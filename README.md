@@ -189,9 +189,9 @@ This extension contributes the following settings:
 
 -   Force Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
 
--   Commit Language: It allows you to select the language for the commit message translation.
-
 -   Number of characters: It allows you to select the number of characters for the commit message.
+
+-   Commit Language: It allows you to select the language for the commit message translation.
 
     <table>
         <thead>
