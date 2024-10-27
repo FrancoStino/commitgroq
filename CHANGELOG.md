@@ -1,3 +1,8 @@
+## [v3.5.1] - 2024-10-27
+### :sparkles: New Features
+- [`fe74abb`](https://github.com/FrancoStino/commitgroq/commit/fe74abb5d1c90cc4da4637ca47d07e96089322da) - Update app version and README for settings *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.5.0] - 2024-10-27
 ### :sparkles: New Features
 - [`85063b0`](https://github.com/FrancoStino/commitgroq/commit/85063b09eec7f8a87f6bf6fbdff87846731d89d4) - Add dynamic char limit for commit msgs *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -265,3 +270,4 @@
 [v3.4.2]: https://github.com/FrancoStino/commitgroq/compare/v3.4.1...v3.4.2
 [v3.4.3]: https://github.com/FrancoStino/commitgroq/compare/v3.4.2...v3.4.3
 [v3.5.0]: https://github.com/FrancoStino/commitgroq/compare/v3.4.3...v3.5.0
+[v3.5.1]: https://github.com/FrancoStino/commitgroq/compare/v3.5.0...v3.5.1
