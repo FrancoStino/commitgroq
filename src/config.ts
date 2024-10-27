@@ -21,6 +21,7 @@ class Config {
         const summaryTemperature: number = config.get("custom.summaryTemperature") as number;
         const commitPrompt: string = config.get("custom.commitPrompt") as string;
         const commitTemperature: number = config.get("custom.commitTemperature") as number;
+        const commitCharacters: number = config.get("custom.numberOfCharacters") as number;
         const language: string = config.get('languages') as string;
         const forceCommitLowerCase: boolean = config.get("forceCommitLowerCase") as boolean;
         const forceCommitWithoutDotsAtEnd: boolean = config.get("forceCommitWithoutDotsAtEnd") as boolean;
@@ -35,6 +36,7 @@ class Config {
             summaryTemperature,
             commitPrompt,
             commitTemperature,
+            commitCharacters,
             language,
             forceCommitLowerCase,
             forceCommitWithoutDotsAtEnd,

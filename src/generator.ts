@@ -92,6 +92,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         commitEmojis,
         modelName,
         useDescription,
+        commitCharacters,
         language,
         forceCommitLowerCase,
         forceCommitWithoutDotsAtEnd,
@@ -113,8 +114,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
             revert: When undoing a previous commit.
             refactor: When restructuring code without changing its external behavior, or is any of the other refactor types.
         - Do not add any issues numeration, explain your output nor introduce your answer.
-        - Output directly only one commit message in plain text with the next format: \`{type}: {commit_message}\`.
-        - Be as concise as possible, keep the message under 50 characters.
+        - Output directly only one commit message of ${commitCharacters} characters in plain text with the next format: \`{type}: {commit_message}\`.
         - Translate all in ${language}.`.trim();
 
     const prompt = commitPrompt || defaultCommitPrompt;
@@ -127,7 +127,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
                 { role: "user", content: `Here are the summaries changes: ${summaries.join(", ")}` },
             ],
             temperature: commitTemperature,
-            max_tokens: 50,
+            // max_tokens: 50,
         });
 
         let commit = chatCompletion.choices[0]?.message?.content?.replace(/["`]/g, "") || "";
