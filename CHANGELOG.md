@@ -1,3 +1,11 @@
+## [v3.6.0] - 2024-12-23
+### :sparkles: New Features
+- [`e58b7f9`](https://github.com/FrancoStino/commitgroq/commit/e58b7f9172c7a0b9be5f6cfb5590d3bfe4f1286f) - enhance commit message generation and add new API proposal *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`30bda37`](https://github.com/FrancoStino/commitgroq/commit/30bda374f0f02fb73be847f6926f016cd76e4db6) - update dependencies and package version *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.5.1] - 2024-10-27
 ### :sparkles: New Features
 - [`fe74abb`](https://github.com/FrancoStino/commitgroq/commit/fe74abb5d1c90cc4da4637ca47d07e96089322da) - Update app version and README for settings *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -271,3 +279,4 @@
 [v3.4.3]: https://github.com/FrancoStino/commitgroq/compare/v3.4.2...v3.4.3
 [v3.5.0]: https://github.com/FrancoStino/commitgroq/compare/v3.4.3...v3.5.0
 [v3.5.1]: https://github.com/FrancoStino/commitgroq/compare/v3.5.0...v3.5.1
+[v3.6.0]: https://github.com/FrancoStino/commitgroq/compare/v3.5.1...v3.6.0
