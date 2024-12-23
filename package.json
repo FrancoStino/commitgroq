@@ -29,9 +29,6 @@
     ],
     "activationEvents": [],
     "main": "./out/extension.js",
-    "enabledApiProposals": [
-        "contribSourceControlInputBoxMenu"
-    ],
     "preview": true,
     "contributes": {
         "commands": [
@@ -42,7 +39,10 @@
             {
                 "command": "commitgroq.createCommit",
                 "title": "Commit Groq: Commit Groq AI",
-                "icon": "$(git-commit)"
+                "icon": {
+                    "light": "assets/groq-icon-light.svg",
+                    "dark": "assets/groq-icon-dark.svg"
+                }
             },
             {
                 "command": "commitgroq.getModels",
@@ -51,6 +51,13 @@
         ],
         "menus": {
             "scm/inputBox": [
+                {
+                    "when": "scmProvider == git",
+                    "command": "commitgroq.createCommit",
+                    "group": "navigation"
+                }
+            ],
+            "scm/title": [
                 {
                     "when": "scmProvider == git",
                     "command": "commitgroq.createCommit",
