@@ -13,6 +13,10 @@
         "AI"
     ],
     "icon": "assets/icon.png",
+    "galleryBanner": {
+        "color": "#37110b",
+        "theme": "dark"
+    },
     "license": "MIT",
     "keywords": [
         "code",
@@ -25,6 +29,10 @@
     ],
     "activationEvents": [],
     "main": "./out/extension.js",
+    "enabledApiProposals": [
+        "contribSourceControlInputBoxMenu"
+    ],
+    "preview": true,
     "contributes": {
         "commands": [
             {
@@ -34,7 +42,7 @@
             {
                 "command": "commitgroq.createCommit",
                 "title": "Commit Groq: Commit Groq AI",
-                "icon": "$(sparkle)"
+                "icon": "$(git-commit)"
             },
             {
                 "command": "commitgroq.getModels",
@@ -42,7 +50,7 @@
             }
         ],
         "menus": {
-            "scm/title": [
+            "scm/inputBox": [
                 {
                     "when": "scmProvider == git",
                     "command": "commitgroq.createCommit",
