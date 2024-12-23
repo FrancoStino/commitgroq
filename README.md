@@ -155,6 +155,9 @@ This extension contributes the following settings:
             <code>Mistral AI</code></td>
             <td><code>Cloud</code></td>
         </tr>
+        <tr>
+        <td><i>And more...</i></td>
+        </tr>
     </tbody>
 </table>
 

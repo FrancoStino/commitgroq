@@ -24,9 +24,7 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
 
     const groq = new Groq({ apiKey: apiKeyGroq });
 
-    const defaultSummaryPrompt = `
-        You are an expert developer specialist in creating commits.
-        Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
+    const defaultSummaryPrompt = `You are an expert developer specialist in creating commits. Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
         - Do not use any code snippets, imports, file routes or bullets points.
         - Do not mention the route of file that has been change.
         - Simply describe the MAIN GOAL of the changes.

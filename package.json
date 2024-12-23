@@ -2,7 +2,7 @@
     "name": "commitgroq",
     "displayName": "Commit Groq AI",
     "description": "Generative Commit AI with Groq",
-    "version": "3.6.0",
+    "version": "3.6.1",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.96.0"
@@ -39,10 +39,7 @@
             {
                 "command": "commitgroq.createCommit",
                 "title": "Commit Groq: Commit Groq AI",
-                "icon": {
-                    "light": "assets/groq-icon-light.svg",
-                    "dark": "assets/groq-icon-dark.svg"
-                }
+                "icon": "assets/groq-icon.svg"
             },
             {
                 "command": "commitgroq.getModels",
