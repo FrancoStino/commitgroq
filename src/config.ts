@@ -3,7 +3,7 @@ import { initializeApiKey } from "./types/apiKeyManager";
 
 
 class Config {
-    private context: ExtensionContext;
+    private readonly context: ExtensionContext;
 
     constructor(context: ExtensionContext) {
         this.context = context;
