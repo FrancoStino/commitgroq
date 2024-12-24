@@ -1,3 +1,11 @@
+## [v3.6.1] - 2024-12-23
+### :sparkles: New Features
+- [`e0e37b8`](https://github.com/FrancoStino/commitgroq/commit/e0e37b8f1f81a0befbac34ecee1e711ae6220f76) - add stash support and error codes *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`b293db8`](https://github.com/FrancoStino/commitgroq/commit/b293db841e7b56fb72b2ceb56bf334665943ba5a) - update README and package version; remove unused light SVG icon and rename dark icon; improve summary prompt for commit generation *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.6.0] - 2024-12-23
 ### :sparkles: New Features
 - [`e58b7f9`](https://github.com/FrancoStino/commitgroq/commit/e58b7f9172c7a0b9be5f6cfb5590d3bfe4f1286f) - enhance commit message generation and add new API proposal *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -280,3 +288,4 @@
 [v3.5.0]: https://github.com/FrancoStino/commitgroq/compare/v3.4.3...v3.5.0
 [v3.5.1]: https://github.com/FrancoStino/commitgroq/compare/v3.5.0...v3.5.1
 [v3.6.0]: https://github.com/FrancoStino/commitgroq/compare/v3.5.1...v3.6.0
+[v3.6.1]: https://github.com/FrancoStino/commitgroq/compare/v3.6.0...v3.6.1
