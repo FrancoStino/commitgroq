@@ -1,3 +1,9 @@
+## [v3.6.3] - 2025-11-04
+### :wrench: Chores
+- [`b13d1d5`](https://github.com/FrancoStino/commitgroq/commit/b13d1d5e0ed452bf5321fcc3972bc2891950e631) - **deps**: bump form-data in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`d45fb35`](https://github.com/FrancoStino/commitgroq/commit/d45fb351dc43ab1bdd2a6ecb5b1d2740589e7e6b) - **deps-dev**: bump esbuild *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [v3.6.2] - 2024-12-24
 ### :recycle: Refactors
 - [`6d56759`](https://github.com/FrancoStino/commitgroq/commit/6d567597183d5c8a4327c7b7402f8869442f99c4) - update project version and context property *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -298,3 +304,4 @@
 [v3.6.0]: https://github.com/FrancoStino/commitgroq/compare/v3.5.1...v3.6.0
 [v3.6.1]: https://github.com/FrancoStino/commitgroq/compare/v3.6.0...v3.6.1
 [v3.6.2]: https://github.com/FrancoStino/commitgroq/compare/v3.6.1...v3.6.2
+[v3.6.3]: https://github.com/FrancoStino/commitgroq/compare/v3.6.2...v3.6.3
