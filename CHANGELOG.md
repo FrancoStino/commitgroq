@@ -1,3 +1,11 @@
+## [v3.6.2] - 2025-11-16
+### :recycle: Refactors
+- [`6d56759`](https://github.com/FrancoStino/commitgroq/commit/6d567597183d5c8a4327c7b7402f8869442f99c4) - update project version and context property *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### :wrench: Chores
+- [`e527176`](https://github.com/FrancoStino/commitgroq/commit/e5271763c6849fe19c51d473645b081b7807f43c) - update typescript eslint plugin and parser versions *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.6.3] - 2025-11-04
 ### :wrench: Chores
 - [`b13d1d5`](https://github.com/FrancoStino/commitgroq/commit/b13d1d5e0ed452bf5321fcc3972bc2891950e631) - **deps**: bump form-data in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
@@ -305,3 +313,4 @@
 [v3.6.1]: https://github.com/FrancoStino/commitgroq/compare/v3.6.0...v3.6.1
 [v3.6.2]: https://github.com/FrancoStino/commitgroq/compare/v3.6.1...v3.6.2
 [v3.6.3]: https://github.com/FrancoStino/commitgroq/compare/v3.6.2...v3.6.3
+[v3.6.2]: https://github.com/FrancoStino/commitgroq/compare/v3.6.1...v3.6.2
