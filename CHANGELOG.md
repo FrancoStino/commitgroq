@@ -1,3 +1,8 @@
+## [v3.6.4] - 2026-03-28
+### :wrench: Chores
+- [`b7159a5`](https://github.com/FrancoStino/commitgroq/commit/b7159a5197df6029613463aafde5e3e9e2046680) - **deps**: bump flatted in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [v3.6.3] - 2026-03-20
 ### :wrench: Chores
 - [`b13d1d5`](https://github.com/FrancoStino/commitgroq/commit/b13d1d5e0ed452bf5321fcc3972bc2891950e631) - **deps**: bump form-data in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
@@ -322,3 +327,4 @@
 [v3.6.3]: https://github.com/FrancoStino/commitgroq/compare/v3.6.2...v3.6.3
 [v3.6.2]: https://github.com/FrancoStino/commitgroq/compare/v3.6.1...v3.6.2
 [v3.6.3]: https://github.com/FrancoStino/commitgroq/compare/v3.6.2...v3.6.3
+[v3.6.4]: https://github.com/FrancoStino/commitgroq/compare/v3.6.3...v3.6.4
